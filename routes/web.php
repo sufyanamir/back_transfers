@@ -20,3 +20,16 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
+Route::get('/booking', function () {
+    return view('booking');
+});
+
+Route::get('/whybooking', function () {
+    return view('whyBooking');
+});
+
+

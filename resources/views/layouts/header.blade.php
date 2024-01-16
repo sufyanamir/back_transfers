@@ -6,6 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="{{ asset('assets/style/style.css') }}">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
         @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
