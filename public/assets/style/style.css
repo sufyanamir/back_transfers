@@ -1,0 +1,17 @@
+.bg_image{
+    background-image: url(../images/BG\ Footer.png);
+    min-height: 100%;
+
+
+
+}
+.bg-image{
+    background-image: url(../images/how_it_works\ Mobile\ Bg.png);
+    min-height: 100%;
+
+}
+.Numbers_image{
+    background-image: url(../images/numbers\ bg.png);
+    height: 100%;
+    object-fit: contain;
+}
