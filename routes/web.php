@@ -18,14 +18,14 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('home');
+    return view('Home');
 });
 
 Route::get('/test', function () {
     return view('test');
 });
 Route::get('/booking', function () {
-    return view('booking');
+    return view('Booking');
 });
 
 Route::get('/whybooking', function () {
