@@ -461,9 +461,9 @@
         </div>
         {{-- cards --}}
         <div class="flex  flex-wrap gap-10 justify-center lg:justify-start pt-20">
-            <x-newsCards></x-newsCards>
-            <x-newsCards></x-newsCards>
-            <x-newsCards></x-newsCards>
+            <x-news-cards></x-news-cards>
+            <x-news-cards></x-news-cards>
+            <x-news-cards></x-news-cards>
 
 
 
