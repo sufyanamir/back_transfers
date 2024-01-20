@@ -32,4 +32,20 @@ Route::get('/whybooking', function () {
     return view('whyBooking');
 });
 
+Route::get('/bookingextra', function () {
+    return view('bookingExtra');
+});
+
+Route::get('/bookingpassenger', function () {
+    return view('bookingPassenger');
+});
+Route::get('/bookingpayment', function () {
+    return view('bookingPayment');
+});
+Route::get('/bookingrecieved', function () {
+    return view('bookingRecieved');
+});
+
+
+
 

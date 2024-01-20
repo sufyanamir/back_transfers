@@ -1,9 +1,9 @@
-<div class="max-w-[800px]  p-4 bg-gray-50 rounded-xl  shadow-2xl font-montserrat">
-   <div class="grid lg:grid-cols-[450px,auto]">
+<div class="max-w-[800px] xl:w-[900px]  p-4 bg-gray-50 rounded-xl  shadow-2xl font-montserrat">
+   <div class="grid  grid-cols-1 lg:grid-cols-[450px,auto]">
     {{-- 1st================================== --}}
-         <div class=" p-2">
-            <div>
-                <img src={{asset('assets/icons/carCards.svg')}} alt="">
+         <div class="">
+            <div class="">
+                <img src={{asset('assets/icons/carCards.svg')}} alt="" class="w-full">
                </div>
             <div class="flex gap-4">
                 <div class="flex items-center gap-2">
@@ -35,6 +35,7 @@
 
 
          </div>
+         <hr class="border-1 border-gray-700 lg:hidden my-5">
          {{-- 2nd================================ --}}
          <div class="pl-5">
             <div class="flex flex-col gap-5 font-montserrat">
