@@ -13,9 +13,9 @@
 <section class="max-w-[1030px] mx-auto flex flex-wrap  gap-10 py-10 lg:justify-start justify-center">
 
 
-<x-service-Cards></x-service-Cards>
-<x-service-Cards></x-service-Cards>
-<x-service-Cards></x-service-Cards>
+<x-service-cards></x-service-cards>
+<x-service-cards></x-service-cards>
+<x-service-cards></x-service-cards>
 
 </section>
 
@@ -23,9 +23,9 @@
 <section class="max-w-[1030px] mx-auto flex flex-wrap  gap-10 py-10 lg:justify-start justify-center">
 
 
-    <x-service-Cards></x-service-Cards>
-    <x-service-Cards></x-service-Cards>
-    <x-service-Cards></x-service-Cards>
+    <x-service-cards></x-service-cards>
+    <x-service-cards></x-service-cards>
+    <x-service-cards></x-service-cards>
 
     </section>
 
