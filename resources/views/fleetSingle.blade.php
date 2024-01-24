@@ -107,7 +107,10 @@
 
 
 {{--  --}}
-<section class="lg:w-[1230px] w-full lg:mx-auto grid px-20 gap-4 md:grid-cols-2 lg:grid-cols-3 py-20  mt-10">
+<div class="font-montserrat text-3xl font-medium text-center">
+    <h1>Features Of Our Mercedes-Benz E-Class Vehicles</h1>
+</div>
+<section class="lg:w-[1230px] w-full lg:mx-auto flex flex-wrap gap-10 py-10 justify-center  mt-10">
     <x-trip-card :img="'assets/icons/dol.svg'" :title="'All-inclusive pricing'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/plane2.svg'" :title="'Seamless airport travel'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/timer.svg'" :title="'Travel on your terms'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
@@ -117,10 +120,96 @@
 
 </section>
 {{--  --}}
-<section class="lg:w-[1230px] w-full lg:mx-auto grid px-20 gap-4 md:grid-cols-2 lg:grid-cols-3  ">
+<section class="lg:w-[1230px] w-full lg:mx-auto flex justify-center flex-wrap gap-10  ">
     <x-trip-card :img="'assets/icons/dol.svg'" :title="'All-inclusive pricing'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/plane2.svg'" :title="'Seamless airport travel'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/timer.svg'" :title="'Travel on your terms'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
+
+
+
+
+</section>
+<div class="font-montserrat text-3xl font-medium text-center">
+    <h1>Book Your Business Class</h1>
+</div>
+<section class="max-w-[1230px] mx-auto py-20">
+    <div class="flex flex-wrap gap-5 px-10">
+
+
+        <div class="">
+            <div>
+                <span>Business Class</span>
+            </div>
+            <div>
+                <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
+            </div>
+
+            {{--  --}}
+            <div class="flex gap-10">
+                <div class="flex items-center gap-4 ">
+                    <div><img src="{{asset('assets/icons/passenger.svg')}}" alt=""></div>
+                    <div><span>Passenger</span></div>
+                </div>
+                <div class="flex items-center gap-4 ">
+                    <div><img src="{{asset('assets/icons/lagage.svg')}}" alt=""></div>
+                    <div><span>Luggage</span></div>
+                </div>
+
+            </div>
+            {{--  --}}
+            <div>
+                <img src={{asset('assets/icons/bussines.png')}} alt="">
+            </div>
+        </div>
+        <div>
+            <div class=" bg-lightGreen rounded-xl flex flex-col gap-4 w-[400px] p-5">
+                <div class="flex justify-between ">
+                    <div><h1>Hourly rate (minimum 3 hours)</h1></div>
+                    <div>$29</div>
+                </div>
+                <hr>
+                <div class="flex justify-between ">
+                    <div><h1>Hourly rate (minimum 3 hours)</h1></div>
+                    <div>$29</div>
+                </div>
+                <hr>
+                <div class="flex justify-between ">
+                    <div><h1>Hourly rate (minimum 3 hours)</h1></div>
+                    <div>$29</div>
+                </div>
+                {{-- button --}}
+                <div>
+                    <button class="bg-black text-white px-3 py-4 rounded-xl w-full">Get a Price & Book</button>
+
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="flex items-center gap-2">
+                    <div><img src={{asset('assets/icons/meet.svg')}} alt=""></div>
+                    <div>Meet & Greet included</div>
+
+                </div>
+                <div class="flex items-center gap-2">
+                    <div><img src={{asset('assets/icons/cancel.svg')}} alt=""></div>
+                    <div>Meet & Greet included</div>
+
+                </div>
+            </div>
+            {{--  --}}
+            <div class="flex gap-4 mt-5">
+                <div class="flex items-center gap-2">
+                    <div><img src={{asset('assets/icons/meet.svg')}} alt=""></div>
+                    <div>Meet & Greet included</div>
+
+                </div>
+                <div class="flex items-center gap-2">
+                    <div><img src={{asset('assets/icons/cancel.svg')}} alt=""></div>
+                    <div>Meet & Greet included</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

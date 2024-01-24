@@ -58,7 +58,7 @@
             <h1 class="font-montserrat text-3xl font-semibold capitalize">extra options</h1>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-14 mt-5">
+        <div class="flex flex-wrap justify-evenly gap-10">
 
            <div class="flex flex-col gap-8">
                      <div class="flex flex-col">

@@ -67,3 +67,4 @@ const cardSider = new Swiper('.swiper', {
 
 
 
+new DataTable('#dataTable');

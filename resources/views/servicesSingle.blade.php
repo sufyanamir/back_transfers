@@ -18,7 +18,7 @@
 </div>
 
 {{--  --}}
-<section class="lg:w-[1230px] w-full lg:mx-auto grid px-20 gap-4 md:grid-cols-2 lg:grid-cols-3 py-20  mt-10">
+<section class="lg:w-[1230px] w-full lg:mx-auto flex flex-wrap gap-10 py-20 justify-center">
     <x-trip-card :img="'assets/icons/dol.svg'" :title="'All-inclusive pricing'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/plane2.svg'" :title="'Seamless airport travel'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/timer.svg'" :title="'Travel on your terms'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
@@ -28,7 +28,7 @@
 
 </section>
 
-<section class="max-w-[1130px] mx-auto px-20">
+<section class="max-w-[1130px] mx-auto px-10">
     <div>
         <h1 class="text-4xl font-bold capitalize">Airport transfer in the city</h1>
     </div>
