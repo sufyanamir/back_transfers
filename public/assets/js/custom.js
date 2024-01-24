@@ -64,3 +64,6 @@ const cardSider = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+
+

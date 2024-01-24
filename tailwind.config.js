@@ -13,7 +13,10 @@ module.exports = {
             montserrat: ['Montserrat', 'sans-serif'],
           },
           colors:{
-            "pink":"#FDEEEC"
+            "pink":"#FDEEEC",
+            "orange":"#E95440",
+            "gry":"#626262"
+
 
 
           },

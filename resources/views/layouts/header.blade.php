@@ -50,11 +50,15 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#"
+                                        <a href="/"
                                             class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
                                     </li>
-                                    <li aria-labelledby="dropdownNavbarLink">
-                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                    <li>
+                                        <a href="/booking"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home1</a>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink1">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown1"
                                             data-dropdown-placement="right-start" type="button"
                                             class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
                                                 class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
@@ -62,10 +66,10 @@
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                     stroke-width="2" d="m1 1 4 4 4-4" />
                                             </svg></button>
-                                        <div id="doubleDropdown"
+                                        <div id="doubleDropdown1"
                                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                                aria-labelledby="doubleDropdownButton">
+                                                aria-labelledby="doubleDropdownButton1">
                                                 <li>
                                                     <a href="#"
                                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
@@ -112,8 +116,12 @@
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        <a href="/fleets"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet List</a>
+                                    </li>
+                                    <li>
+                                        <a href="/fleetsingle"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet Single</a>
                                     </li>
                                     <li aria-labelledby="dropdownNavbarLink6">
                                         <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
@@ -225,7 +233,7 @@
                         </li>
                         {{-- ================================= --}}
                         <li>
-                            <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                            <button id="dropdownNavbarLink7" data-dropdown-toggle="dropdownNavbar7"
                                 class="flex items-center justify-between w-full py-2 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent">servies
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
@@ -233,15 +241,19 @@
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg></button>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar3"
+                            <div id="dropdownNavbar7"
                                 class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        <a href="/serviceslist"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services List</a>
                                     </li>
-                                    <li aria-labelledby="dropdownNavbarLink3">
+                                    <li>
+                                        <a href="/servicessingle"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services Single</a>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink7">
                                         <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
                                             data-dropdown-placement="right-start" type="button"
                                             class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
@@ -287,9 +299,69 @@
                             </div>
                         </li>
                         {{-- ========================== --}}
-                       <li>
-                        <a href="#">Contact</a>
-                       </li>
+                        <li>
+                            <button id="dropdownNavbarLink10" data-dropdown-toggle="dropdownNavbar10"
+                                class="flex items-center justify-between w-full py-2 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent">Booking
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar10"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownLargeButton10">
+                                    <li>
+                                        <a href="/booking"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Booking</a>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink10">
+                                        <button id="doubleDropdownButton3" data-dropdown-toggle="doubleDropdown3"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
+                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown3"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton3">
+                                                <li>
+                                                    <a href="/whybooking"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">whyBooking</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/bookingextra"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">bookingExtra
+                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/bookingpassenger"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">bookingPayment</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/bookingpayment"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">bookingPayment</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/bookingrecieved"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">bookingRecieved</a>
+                                    </li>
+                                </ul>
+                                <div class="py-1">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                        out</a>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
 

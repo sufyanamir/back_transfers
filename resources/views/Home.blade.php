@@ -6,16 +6,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/header_image.png')}}"
-                        alt="" class="w-full object-cover h-[470px]">
+                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
+                        class="w-full object-cover h-[470px]">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/header_image.png')}}"
-            alt="" class="w-full object-cover h-[470px]">
+                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
+                        class="w-full object-cover h-[470px]">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{asset('assets/images/header_image.png')}}"
-            alt="" class="w-full object-cover h-[470px]">
+                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
+                        class="w-full object-cover h-[470px]">
                 </div>
 
             </div>
@@ -30,8 +30,8 @@
             <div class="swiper-scrollbar"></div>
         </div>
         <div
-            class="z-10 absolute top-[250px] w-80  mx-4 lg:w-[400px]  lg:top-[80px]  lg:left-[15%] md:top-[200px] md:w-full  text-white   ">
-            <div class="     font-montserrat capitalize">
+            class="z-10 absolute top-[270px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
+            <div class="     font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
                 <p class="text-lg font-light leading-10">Where would you like Go</p>
                 <p class="text-2xl">
                     All countries and airports,stations and ports
@@ -44,15 +44,20 @@
         </div>
         {{--  --}}
         <div
-            class=" z-10 header_bottom lg:left-[15%]  w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
+            class="header-content z-10 header_bottom   w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
             <div class="flex items-center  justify-between">
                 <div class="flex items-center gap-3">
                     <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
                         <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="w-4">
                     </div>
-                    <div>
-                        <span>Date</span>
-                        <p class="font-semibold font-palanquin">Thu, Oct 06, 2022</p>
+                    <div class="">
+                        <span class="font-bold">Date</span>
+                        <div>
+                            {{-- =============================== --}}
+                            <input type="date" class="border-none bg-slate-50 rounded-full ">
+
+                            {{-- ======================================================= --}}
+                        </div>
                     </div>
                 </div>
                 {{-- date --}}
@@ -61,8 +66,10 @@
                         <img src="{{ asset('assets/icons/clock.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">time</span>
-                        <p class="font-semibold font-palanquin">Thu, Oct 06, 2022</p>
+                        <span class="capitalize font-bold">time</span>
+                        <div>
+                            <input type="time" class="border-none bg-slate-100 rounded-full">
+                        </div>
                     </div>
                 </div>
                 {{-- from --}}
@@ -71,8 +78,20 @@
                         <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">from</span>
-                        <p class="font-semibold font-palanquin">Thu, Oct 06, 2022</p>
+                        <span class="capitalize font-bold">from</span>
+                        <div>
+
+
+                            <select id="countries"
+                                class="bg-gray-100 border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
+
+                        </div>
                     </div>
                 </div>
                 {{-- to --}}
@@ -81,14 +100,26 @@
                         <img src="{{ asset('assets/icons/to.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">to</span>
-                        <p class="font-semibold font-palanquin">Thu, Oct 06, 2022</p>
+                        <span class="capitalize font-bold">to</span>
+                        <div>
+
+
+                            <select id="countries"
+                                class="bg-gray-100 border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
+
+                        </div>
                     </div>
                 </div>
                 {{-- search bar --}}
                 <div class="relative">
                     <img src="{{ asset('assets/icons/search.svg') }}"alt=""
-                        class="absolute top-3 left-2  z-10 bg-black  ">
+                        class="absolute top-4 left-2  z-10 bg-black  ">
                     <input type="text" placeholder="Search"
                         class="relative rounded-full outline-none px-10 w-32 bg-black text-white py-3">
                 </div>
@@ -155,7 +186,8 @@
         {{-- serach bar --}}
         <div class="flex items-center gap-3   mx-2 rounded-md ">
 
-            <input type="text" placeholder="search" class="w-full bg-black rounded-lg p-5 text-white outline-none">
+            <input type="text" placeholder="search"
+                class="w-full bg-black rounded-lg p-5 text-white outline-none">
         </div>
 
 
@@ -324,11 +356,11 @@
 </section>
 <section class="lg:w-[1140px] w-full lg:mx-auto grid px-5 gap-4 md:grid-cols-2 lg:grid-cols-3 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-    highest quality standards.'"></x-trip-card>
+        highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-    highest quality standards.'"></x-trip-card>
+        highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/travel.svg'" :title="'Private Travel Solutions'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-    highest quality standards.'"></x-trip-card>
+        highest quality standards.'"></x-trip-card>
 
 
 
