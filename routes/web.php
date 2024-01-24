@@ -59,11 +59,19 @@ Route::get('/login', function () {
     return view('signUp');
 });
 
+Route::get('/signup', function () {
+    return view('register');
+});
+
 Route::get('/servicessingle', function () {
     return view('servicesSingle');
 });
 Route::get('/fleetsingle', function () {
     return view('fleetSingle');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard');
 });
 
 

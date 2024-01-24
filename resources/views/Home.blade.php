@@ -1,7 +1,7 @@
 @include('layouts.header')
-<section class="Hero  ">
-    <div class="relative ">
-        <div class="swiper">
+<section class=" Hero   ">
+    <div class="relative h-full Hero">
+        {{-- <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -28,10 +28,10 @@
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-        </div>
+        </div> --}}
         <div
             class="z-10 absolute top-[270px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
-            <div class="     font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
+            <div class=" font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
                 <p class="text-lg font-light leading-10">Where would you like Go</p>
                 <p class="text-2xl">
                     All countries and airports,stations and ports

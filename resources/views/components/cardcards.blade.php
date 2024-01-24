@@ -1,4 +1,4 @@
-<div class="max-w-[800px] xl:w-[900px]  p-4 bg-gray-50 rounded-xl  shadow-2xl font-montserrat">
+<div class="max-w-full xl:w-[900px]  p-4 bg-gray-50 rounded-xl  shadow-2xl font-montserrat">
    <div class="grid  grid-cols-1 lg:grid-cols-[450px,auto]">
     {{-- 1st================================== --}}
          <div class="">

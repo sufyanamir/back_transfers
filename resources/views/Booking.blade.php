@@ -1,7 +1,7 @@
 @include('layouts.header')
 <section class="Hero  ">
-    <div class="relative ">
-        <div class="swiper">
+    <div class="relative Hero ">
+        {{-- <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -28,7 +28,7 @@
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-        </div>
+        </div> --}}
         <div
             class="z-10 absolute top-[270px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
             <div class="     font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
@@ -189,7 +189,7 @@
         <span>More Services</span>
     </div>
     {{-- images --}}
-    <div class="flex flex-wrap gap-10 pt-10">
+    <div class="flex flex-wrap justify-center gap-10 pt-10">
         <div><img src={{asset('assets/icons/express.png')}} alt="" class="w-[300px] h-[300px] object-contain"></div>
         <div><img src={{asset('assets/icons/coach.png')}} alt="" class="w-[300px] h-[300px] object-contain"></div>
         <div><img src={{asset('assets/icons/minivan.png')}} alt="" class="w-[300px] h-[300px] object-contain"></div>
@@ -278,10 +278,10 @@
 <section class="max-w-[1100px] m-auto px-2 py-10">
     <div class=" grid md:grid-cols-2 lg:grid-cols-2 gap-10">
 
-        <x-serviceSatisfaction></x-serviceSatisfaction>
-        <x-serviceSatisfaction></x-serviceSatisfaction>
-        <x-serviceSatisfaction></x-serviceSatisfaction>
-        <x-serviceSatisfaction></x-serviceSatisfaction>
+        <x-service-satisfaction></x-service-satisfaction>
+        <x-service-satisfaction></x-service-satisfaction>
+        <x-service-satisfaction></x-service-satisfaction>
+        <x-service-satisfaction></x-service-satisfaction>
     </div>
 
 

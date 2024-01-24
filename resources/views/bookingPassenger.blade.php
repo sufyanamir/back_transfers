@@ -53,14 +53,14 @@
 
 
 
-       <section class="py-20 max-w-[1430px] m-auto">
-        <div>
-            <h1 class="font-montserrat text-3xl font-semibold capitalize">Passenger Details</h1>
+       <section class="py-20 max-w-full m-auto">
+        <div class="max-w-[1130px] mx-auto">
+            <h1 class="font-montserrat  text-3xl font-semibold capitalize">Passenger Details</h1>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-14 mt-5">
+        <div class="md:flex flex-wrap gap-5 max-w-[1130px] mx-auto  mt-5">
             {{-- first div --}}
-             <div>
+             <div class="flex-1">
                 <div class=" flex flex-col gap-5">
                    <div class="grid lg:grid-cols-2 gap-2">
 
@@ -147,7 +147,7 @@
 
              </div>
            {{-- 2nd div --}}
-           <div>
+           <div class="flex-2">
             <div class="lg:max-w-[400px] w-full border border-gray-200 font-montserrat">
                 <div class="inner  p-5  flex flex-col gap-5  justify-center ">
                     <div class="flex  justify-between">
