@@ -1,7 +1,7 @@
 
 
 
-@include('dashboard.layouts.header')
+@include('admindashboard.layouts.header')
 
 <div class="p-5 flex flex-col">
    <span class="text-2xl font-semibold font-montserrat">Dashboard</span>
@@ -62,7 +62,7 @@
     <div id='recipients' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white ">
 
 
-        <table id="dataTable" class="display" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
+        <table id="example" class="stripe hover" style="width:100%; padding-top: 1em;  padding-bottom: 1em;">
             <thead>
                 <tr>
                     <th data-priority="1">Name</th>
@@ -290,4 +290,4 @@
 
     </div>
 
-@include('dashboard.layouts.footer')
+@include('admindashboard.layouts.footer')

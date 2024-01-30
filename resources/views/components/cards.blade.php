@@ -4,7 +4,7 @@
         <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
     </div>
     <div>
-        <img src="{{asset('assets/icons/card1.png')}}" alt="" class="w-64 mx-auto">
+        <img src="{{asset('assets/icons/card1.png')}}" loading="lazy" alt="" class="w-64 mx-auto">
     </div>
 
     <div class="flex justify-between mx-5">

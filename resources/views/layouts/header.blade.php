@@ -15,19 +15,19 @@
         <nav class="bg-black border-gray-200 dark:border-gray-700 py-1">
             <div class="  flex flex-wrap items-center gap-1 justify-between lg:justify-start lg:gap-10 mx-auto p-4">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-64 xxs:w-[100px]" alt="Flowbite Logo" />
+                    <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-full xxs:w-60" alt="Flowbite Logo" />
                 </a>
                 {{-- ================= --}}
-                <div class="md:hidden block">
+                {{-- <div class="md:hidden ">
                     <a href="">
                         <button class="text-white bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign in</button>
                     </a>
                  </div>
-                 <div class="md:hidden block">
+                 <div class="md:hidden">
                    <a href="">
                     <button class="text-white bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign up</button>
                    </a>
-                 </div>
+                 </div> --}}
                 {{-- ================= --}}
 
 
@@ -214,11 +214,22 @@
                                 </div> --}}
                             </div>
                         </li>
+                        <li class="">
+
+                            <a href="/login">
+                                <button class="text-white lg:bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign in</button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/signup">
+                                <button class="text-white md:bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign up</button>
+                               </a>
+                        </li>
 
                     </ul>
                 </div>
 
-               <div class="float-end text-right mx-auto  flex gap-3">
+               {{-- <div class="float-end text-right mx-auto  flex gap-3">
                 <div class="hidden md:block">
                     <a href="/login">
                         <button class="text-white bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign in</button>
@@ -229,7 +240,7 @@
                     <button class="text-white bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign up</button>
                    </a>
                  </div>
-               </div>
+               </div> --}}
             </div>
 
         </nav>

@@ -6,7 +6,7 @@
        <div>
         <ul class="text-white flex gap-2 max-w-[1030px] mx-auto">
             <li><a href="/">Home</a></li>/
-            <li><a href="">Our Fleet</a></li>
+            <li><a href="/fleets">Our Fleet</a></li>
         </ul>
        </div>
     </div>
@@ -17,7 +17,7 @@
 </div>
 
 {{--  --}}
-<section class="max-w-[1130px] mx-auto px-20 mt-20">
+<section class="max-w-[1024px] mx-auto px-20 mt-20">
     <div>
         <h1 class="text-4xl font-bold capitalize">Mercedes - Benz E-Class</h1>
     </div>
@@ -88,18 +88,57 @@
 
 </section>
 
-<section class="max-w-[1230px] px-20 mx-auto my-10">
-    <div class="flex gap-10 flex-wrap">
+<section class="w-full px-20 mx-auto my-10">
 
 
 
-        <div class="flex-1">
-            <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
+
+        <div class=" cards h-[400px]  ">
+            <div class="swiper p-10 cards">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper cards flex gap-4">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div>
+                <div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div><div class="swiper-slide">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+
+                </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev absolute "></div>
+                <div class="swiper-button-next absolute"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
         </div>
-        <div class="flex-1">
-            <img src={{asset('assets/icons/fleetslide.png')}} alt="">
-        </div>
-    </div>
+
+
 
 
 
@@ -129,16 +168,16 @@
 
 
 </section>
-<div class="font-montserrat text-3xl font-medium text-center">
+<div class="font-montserrat text-3xl font-medium text-center mt-10">
     <h1>Book Your Business Class</h1>
 </div>
-<section class="max-w-[1230px] mx-auto py-20">
+<section class="max-w-[1230px] mx-auto py-20 font-montserrat">
     <div class="flex flex-wrap gap-5 px-10">
 
 
         <div class="">
             <div>
-                <span>Business Class</span>
+                <span class="text-xl font-bold">Business Class</span>
             </div>
             <div>
                 <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
