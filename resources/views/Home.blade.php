@@ -1,6 +1,8 @@
 @include('layouts.header')
-<section class=" Hero   ">
-    <div class="relative h-full Hero">
+<section class="   relative  ">
+    <img class=" z-10 w-full object-cover " src={{asset('assets/images/header-image.png')}} alt="">
+
+    <div class=" h-full w-full object-contain z-20 ">
         {{-- <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -30,7 +32,7 @@
             <div class="swiper-scrollbar"></div>
         </div> --}}
         <div
-            class="z-10 absolute top-[270px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
+            class="z-10 absolute top-[30px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
             <div class=" font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
                 <p class="text-lg font-light leading-10">Where would you like Go</p>
                 <p class="text-2xl">
@@ -44,7 +46,7 @@
         </div>
         {{--  --}}
         <div
-            class="header-content z-10 header_bottom   w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
+            class="header-content z-20 header_bottom   w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
             <div class="flex items-center  justify-between">
                 <div class="flex items-center gap-3">
                     <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
@@ -203,7 +205,7 @@
 </section>
 {{-- ============================================================================= --}}
 
-<section class="w-full  py-10">
+<section class="w-full absolute z-20 py-10 ">
 
     <div class="max-w-[1030px]  mx-auto grid gap-10 grid-cols-1 lg:grid-cols-[300px,auto]">
 
@@ -233,21 +235,60 @@
 </section>
 <hr>
 {{-- =================================================================== --}}
-<section class="py-10 max-w-[1030px] mx-auto">
+<section class="py-10 max-w-[1030px] mx-auto my-32">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
 
         <h1 class="font-semibold text-3xl">Our Fleet</h1>
-        <button class="font-medium">More Fleet</button>
+        <a href="/fleets">
+            <button class="font-medium">More Fleet</button>
+        </a>
     </div>
     {{-- cards --}}
-    <div class="flex  flex-wrap gap-10 justify-center lg:justify-start pt-20">
-        <x-cards></x-cards>
-        <x-cards></x-cards>
-        <x-cards></x-cards>
+    <div class=" cards h-[400px]">
+        <div class="swiper p-10 cards">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cards flex gap-5">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev absolute "></div>
+            <div class="swiper-button-next absolute"></div>
 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
     </div>
 
 
@@ -369,7 +410,7 @@
 
 {{-- Numbers --}}
 <section class="w-full py-20 hidden lg:block">
-    <div class="Numbers_image h-full">
+    <div class="Numbers_image w-full h-full">
         <div
             class="w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-2 py-20 capitalize  px-10 text-white font-montserrat">
             <div class="w-[470px]">
@@ -431,21 +472,60 @@
 
 </section>
 {{-- cards repeat slider paste later...... --}}
-<section class="py-10 max-w-[1030px] mx-auto">
+<section class="py-10 max-w-[1130px] mx-auto">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
 
         <h1 class="font-semibold text-3xl">Our Fleet</h1>
-        <button class="font-medium">More Fleet</button>
+        <a href="/fleets">
+            <button class="font-medium">More Fleet</button>
+        </a>
     </div>
     {{-- cards --}}
-    <div class="flex  flex-wrap gap-10 justify-center lg:justify-start pt-20">
-        <x-cards></x-cards>
-        <x-cards></x-cards>
-        <x-cards></x-cards>
+    <div class=" cards h-[400px]">
+        <div class="swiper p-10 cards">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper cards">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div><div class="swiper-slide">
+                <x-cards></x-cards>
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev absolute "></div>
+            <div class="swiper-button-next absolute"></div>
 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
     </div>
 
 
@@ -458,13 +538,13 @@
 
         <div class=" w-full grid grid-cols-2  gap-3 flex-1 ">
             <div class="box1  row-span-2">
-                <img src={{ asset('assets/icons/colbig.png') }} alt="" class=" ">
+                <img src={{ asset('assets/images/citywith.png') }} alt="" class="h-full ">
             </div>
             <div class="box2 ">
-                <img src={{ asset('assets/icons/colsmall.png') }} alt="" class="">
+                <img src={{ asset('assets/images/allcity.png') }} alt="" class="">
             </div>
             <div class="box3">
-                <img src={{ asset('assets/icons/colend.png') }} alt="" class="">
+                <img src={{ asset('assets/images/taxi.png') }} alt="" class="">
 
             </div>
 

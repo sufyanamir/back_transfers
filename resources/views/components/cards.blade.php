@@ -1,10 +1,10 @@
-<div class="w-72 shadow-2xl rounded-lg h-[21rem] flex flex-col gap-8">
+<div class="w-80 shadow-2xl rounded-lg p-5 flex flex-col gap-8">
     <div class="mx-5 mt-5 font-montserrat ">
         <h1 class="font-medium text-lg">Bussiness class</h1>
         <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
     </div>
     <div>
-        <img src="{{asset('assets/icons/card1.png')}}" alt="" class="w-64 mx-auto">
+        <img src="https://img.freepik.com/free-photo/blue-car-driving-road_114579-4056.jpg?size=626&ext=jpg&ga=GA1.1.255768399.1706697545&semt=ais" loading="lazy" alt="" class="w-64 mx-auto">
     </div>
 
     <div class="flex justify-between mx-5">

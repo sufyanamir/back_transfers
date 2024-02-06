@@ -4,11 +4,14 @@
 
 
 
+
+
 }
 .Hero{
   background-image: url(../images/header-image.png);
    min-height: 500px;
    object-fit: cover;
+   background-repeat: no-repeat;
 }
 .bg-image{
     background-image: url(../images/how_it_works\ Mobile\ Bg.png);
@@ -18,7 +21,9 @@
 .Numbers_image{
     background-image: url(../images/numbers\ bg.png);
     height: 100%;
+    width: 100%;
     object-fit: contain;
+
 }
 
 .header-content{
@@ -29,27 +34,37 @@
 
 .inputGroup {
     font-family: 'Segoe UI', sans-serif;
-    margin: 1em 0 1em 0;
+    font: bold;
+    /* margin: 1em 0 1em 0; */
     width: 100%;
     position: relative;
+
+    border-radius: 6px;
+    border: none;
+    outline: none;
 
   }
 
   .inputGroup input {
     font-size: 100%;
 
+     height: 55px;
     outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius:10px ;
+    /* border: 2px solid rgb(200, 200, 200); */
+    background-color: white;
+
     width: 100%;
+    border-radius: 6px;
+
   }
 
   .inputGroup label {
     font-size: 100%;
+    font: bold;
     position: absolute;
     left: 0;
-    padding: 0.8em;
+    top: -4px;
+    padding: 0.9em;
     margin-left: 0.5em;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -60,13 +75,17 @@
     transform: translateY(-50%) scale(.9);
     margin: 0em;
     margin-left: 1.3em;
-    padding: 0.4em;
+    padding: 0.3em;
     background-color: white;
+    font-family: montserrat;
+    border: none;
+    outline: none;
+
   }
 
-  .inputGroup :is(input:focus, input:valid) {
+  /* .inputGroup :is(input:focus, input:valid) {
     border-color: rgb(150, 150, 200);
-  }
+  } */
 
   /*  */
   .coolinput {
@@ -80,7 +99,7 @@
   .coolinput label.text {
     font-size: 0.75rem;
     color: black;
-    font-weight: 700;
+    font-weight: 900;
     position: relative;
     top: 0.5rem;
     margin: 0 0 0 7px;
@@ -90,7 +109,7 @@
   }
 
   .coolinput input[type=text].input {
-    padding: 11px 10px;
+    padding: 5px 10px;
     font-size: 0.75rem;
     border: 2px #ddd solid;
     border-radius: 5px;
@@ -142,3 +161,229 @@ a.paginate_button.current {
     border: none !important;
     border-radius: 20px !important;
 }
+.swiper-button-prev{
+    color:black !important;
+    position: absolute !important;
+    bottom: 2px !important;
+
+}
+.swiper-button-next{
+    color:black !important;
+}
+.cards{
+    position: relative;
+}
+
+/* ================== */
+.dataTables_wrapper select,
+		.dataTables_wrapper .dataTables_filter input {
+			color: #4a5568;
+			/*text-gray-700*/
+			padding-left: 1rem;
+			/*pl-4*/
+			padding-right: 1rem;
+			/*pl-4*/
+			padding-top: .5rem;
+			/*pl-2*/
+			padding-bottom: .5rem;
+			/*pl-2*/
+			line-height: 1.25;
+			/*leading-tight*/
+			border-width: 2px;
+			/*border-2*/
+			border-radius: .25rem;
+			border-color: #edf2f7;
+			/*border-gray-200*/
+			background-color: #edf2f7;
+			/*bg-gray-200*/
+		}
+
+		/*Row Hover*/
+		table.dataTable.hover tbody tr:hover,
+		table.dataTable.display tbody tr:hover {
+			background-color: #ebf4ff;
+			/*bg-indigo-100*/
+		}
+
+		/*Pagination Buttons*/
+		.dataTables_wrapper .dataTables_paginate .paginate_button {
+			font-weight: 700;
+			/*font-bold*/
+			border-radius: .25rem;
+			/*rounded*/
+			border: 1px solid transparent;
+			/*border border-transparent*/
+		}
+
+		/*Pagination Buttons - Current selected */
+		.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+			color: #fff !important;
+			/*text-white*/
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+			/*shadow*/
+			font-weight: 700;
+			/*font-bold*/
+			border-radius: .25rem;
+			/*rounded*/
+			background: #667eea !important;
+			/*bg-indigo-500*/
+			border: 1px solid transparent;
+			/*border border-transparent*/
+		}
+
+		/*Pagination Buttons - Hover */
+		.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+			color: #fff !important;
+			/*text-white*/
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+			/*shadow*/
+			font-weight: 700;
+			/*font-bold*/
+			border-radius: .25rem;
+			/*rounded*/
+			background: #667eea !important;
+			/*bg-indigo-500*/
+			border: 1px solid transparent;
+			/*border border-transparent*/
+		}
+
+		/*Add padding to bottom border */
+		table.dataTable.no-footer {
+			border-bottom: 1px solid #e2e8f0;
+			/*border-b-1 border-gray-300*/
+			margin-top: 0.75em;
+			margin-bottom: 0.75em;
+		}
+
+		/*Change colour of responsive icon*/
+		table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+		table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+			background-color: #667eea !important;
+			/*bg-indigo-500*/
+		}
+
+
+        .scale-up-hor-center {
+            -webkit-animation: scale-up-hor-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    animation: scale-up-hor-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        @-webkit-keyframes scale-up-hor-center {
+            0% {
+              -webkit-transform: scaleX(0.6);
+                      transform: scaleX(0.6);
+            }
+            100% {
+              -webkit-transform: scaleX(4);
+                      transform: scaleX(4);
+            }
+          }
+          @keyframes scale-up-hor-center {
+            0% {
+              -webkit-transform: scaleX(0.4);
+                      transform: scaleX(0.4);
+            }
+            100% {
+              -webkit-transform: scaleX(1);
+                      transform: scaleX(1);
+            }
+          }
+          .swing-right-bck {
+            -webkit-animation: swing-right-bck 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: swing-right-bck 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+@-webkit-keyframes swing-right-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+@keyframes swing-right-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+.flip-2-hor-bottom-1 {
+	-webkit-animation: flip-2-hor-bottom-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-2-hor-bottom-1 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes flip-2-hor-bottom-1 {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0);
+              transform: translateY(0) rotateX(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: translateY(100%) rotateX(180deg);
+              transform: translateY(100%) rotateX(180deg);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes flip-2-hor-bottom-1 {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0);
+              transform: translateY(0) rotateX(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    100% {
+      -webkit-transform: translateY(100%) rotateX(180deg);
+              transform: translateY(100%) rotateX(180deg);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+
+  .flip-2-hor-top-2 {
+	-webkit-animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-2-hor-top-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes flip-2-hor-top-2 {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0);
+              transform: translateY(0) rotateX(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: translateY(-100%) rotateX(180deg);
+              transform: translateY(-100%) rotateX(180deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+  @keyframes flip-2-hor-top-2 {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0);
+              transform: translateY(0) rotateX(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: translateY(-100%) rotateX(180deg);
+              transform: translateY(-100%) rotateX(180deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+  }
+
+
