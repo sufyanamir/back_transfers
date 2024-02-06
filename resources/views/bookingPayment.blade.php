@@ -67,12 +67,10 @@
 
 
                         <div>
-                            <input type="text" placeholder="Name"
-                                class="bg-gray-200 h-14 border-none outline-none w-full rounded-lg ">
+                            <x-input :type="'text'" :label="'Name'"></x-input>
                         </div>
                         <div>
-                            <input type="text" placeholder=" Last Name"
-                                class="bg-gray-200 h-14 border-none outline-none w-full rounded-lg ">
+                            <x-input :type="'text'" :label="'Last Name'"></x-input>
                         </div>
                     </div>
 
@@ -81,8 +79,7 @@
 
 
                         <div>
-                            <input type="text" placeholder="Name"
-                                class="bg-gray-200 h-14 border-none outline-none w-full rounded-lg ">
+                            <x-input :type="'text'" :label="'company'"></x-input>
                         </div>
 
                     </div>
@@ -91,8 +88,7 @@
 
 
                         <div>
-                            <input type="text" placeholder="Name"
-                                class="bg-gray-200 h-14 border-none outline-none w-full rounded-lg ">
+                            <x-input :type="'text'" :label="'address'"></x-input>
                         </div>
 
                     </div>
@@ -100,22 +96,18 @@
 
                     <div class="grid lg:grid-cols-3 gap-2">
                         <div>
-                            <div class="inputGroup">
-                                <input type="text" required="" autocomplete="off" class="w-full">
-                                <label for="name">Name</label>
-                            </div>
+                            <select name="passengers" id="" class="bg-slate-100 w-full   mt-4 h-[55px] rounded-[6px] border-none font-montserrat">
+                                <option value="">city</option>
+                            </select>
                         </div>
                         <div>
-                            <div class="inputGroup">
-                                <input type="text" required="" autocomplete="off" class="w-full">
-                                <label for="name">Name</label>
-                            </div>
+                            <select name="passengers" id="" class="bg-slate-100 w-full  mt-4 h-[55px] rounded-[6px] border-none font-montserrat">
+                                <option value="">country</option>
+                            </select>
+
                         </div>
                         <div>
-                            <div class="inputGroup">
-                                <input type="text" required="" autocomplete="off" class="w-full">
-                                <label for="name">Name</label>
-                            </div>
+                            <x-input :type="'text'" :label="'Zip Postal/Code'"></x-input>
                         </div>
 
 
@@ -138,12 +130,9 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an
                                 option</label>
                             <select id="countries"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Choose a country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
+                                class="bg-gray-50 border border-gray-300 h-[55px] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Credit card</option>
+
                             </select>
 
                         </div>
@@ -183,7 +172,7 @@
                             class="block mb-2 text-sm font-medium h-2 text-gray-900 dark:text-white">
                             </label>
                             <select id="countries"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 h-[55px] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option selected>Month</option>
                                 <option value="US">United States</option>
                                 <option value="CA">Canada</option>
@@ -198,7 +187,7 @@
                             </label>
 
                             <select id="countries"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                class="bg-gray-50 border border-gray-300 h-[55px] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option selected>Year</option>
                                 <option value="US">United States</option>
                                 <option value="CA">Canada</option>
@@ -210,10 +199,7 @@
                         </div>
                         <div class="col-span-2">
 
-                            <div class="inputGroup">
-                                <input type="text" required="" autocomplete="off" class="w-full">
-                                <label for="name">CVV</label>
-                            </div>
+                            <x-input :type="'text'" :label="'Cvv'"></x-input>
 
                         </div>
 

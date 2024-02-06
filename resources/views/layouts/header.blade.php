@@ -12,8 +12,8 @@
 <body>
     <section>
         <!-- ========== HEADER ========== -->
-        <nav class="bg-black border-gray-200 dark:border-gray-700 py-1">
-            <div class="  flex flex-wrap items-center gap-1 justify-between lg:justify-start lg:gap-10 mx-auto p-4">
+        <nav class="bg-black border-gray-200 dark:border-gray-700 py-4">
+            <div class="  flex flex-wrap items-center gap-1 justify-between lg:justify-start lg:gap-10 mx-auto ">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-full xxs:w-60" alt="Flowbite Logo" />
                 </a>
@@ -154,7 +154,7 @@
                         {{-- ========================== --}}
                         <li>
                             <button id="dropdownNavbarLink10" data-dropdown-toggle="dropdownNavbar10"
-                                class="flex items-center justify-between w-full py-2 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent">Booking
+                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Booking
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -216,13 +216,17 @@
                         </li>
                         <li class="">
 
-                            <a href="/login">
-                                <button class="text-white lg:bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign in</button>
+                            <a href="/login"
+                                <button  
+                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign In
+                                </button>
                             </a>
                         </li>
                         <li class="">
                             <a href="/signup">
-                                <button class="text-white md:bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign up</button>
+                                <button
+                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign up
+                                </button>
                                </a>
                         </li>
 

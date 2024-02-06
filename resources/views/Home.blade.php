@@ -249,7 +249,7 @@
     <div class=" cards h-[400px]">
         <div class="swiper p-10 cards">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper cards">
+            <div class="swiper-wrapper cards flex gap-5">
               <!-- Slides -->
               <div class="swiper-slide">
                 <x-cards></x-cards>
@@ -472,7 +472,7 @@
 
 </section>
 {{-- cards repeat slider paste later...... --}}
-<section class="py-10 max-w-[1030px] mx-auto">
+<section class="py-10 max-w-[1130px] mx-auto">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
@@ -538,13 +538,13 @@
 
         <div class=" w-full grid grid-cols-2  gap-3 flex-1 ">
             <div class="box1  row-span-2">
-                <img src={{ asset('assets/icons/colbig.png') }} alt="" class=" ">
+                <img src={{ asset('assets/images/citywith.png') }} alt="" class="h-full ">
             </div>
             <div class="box2 ">
-                <img src={{ asset('assets/icons/colsmall.png') }} alt="" class="">
+                <img src={{ asset('assets/images/allcity.png') }} alt="" class="">
             </div>
             <div class="box3">
-                <img src={{ asset('assets/icons/colend.png') }} alt="" class="">
+                <img src={{ asset('assets/images/taxi.png') }} alt="" class="">
 
             </div>
 

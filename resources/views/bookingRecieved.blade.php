@@ -170,6 +170,10 @@
 
     </section>
 
+    <div>
+        <x-button :text="'submit'"></x-button>
+    </div>
+
     {{--  --}}
     <section class="max-w-[800px] m-auto  py-10  border border-gray-200 my-10 ">
       <div class="px-10 flex flex-col gap-10">

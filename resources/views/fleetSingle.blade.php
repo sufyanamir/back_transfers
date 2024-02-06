@@ -88,40 +88,40 @@
 
 </section>
 
-<section class="w-full px-20 mx-auto my-10">
+<section class="max-w-[1130px] px-20 mx-auto my-10">
 
 
 
 
-        <div class=" cards h-[400px]  ">
+        <div class=" cards   ">
             <div class="swiper p-10 cards">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper cards flex gap-4">
+                <div class="swiper-wrapper cards flex gap-2">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div>
                 <div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full" >
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div>
                   ...
@@ -146,10 +146,10 @@
 
 
 {{--  --}}
-<div class="font-montserrat text-3xl font-medium text-center">
+<div class="font-montserrat text-3xl font-medium text-center mt-44">
     <h1>Features Of Our Mercedes-Benz E-Class Vehicles</h1>
 </div>
-<section class="lg:w-[1230px] w-full lg:mx-auto flex flex-wrap gap-10 py-10 justify-center  mt-10">
+<section class="max-w-[1230px] mx-auto flex flex-wrap gap-10 py-10 justify-center  mt-10">
     <x-trip-card :img="'assets/icons/dol.svg'" :title="'All-inclusive pricing'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/plane2.svg'" :title="'Seamless airport travel'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/timer.svg'" :title="'Travel on your terms'" :desc="'Both you and your shipments will travel with professional drivers. Always with the highest quality standards.'"></x-trip-card>
@@ -259,7 +259,7 @@
  <div class="max-w-[1030px] mx-auto py-10">
     <h1 class="text-3xl font-montserrat font-semibold text-center">Explore Our Fleet</h1>
  </div>
-<section class="max-w-[1030px] mx-auto flex gap-20 flex-wrap justify-center py-10">
+<section class="max-w-[1130px] mx-auto flex gap-20 flex-wrap justify-center py-10">
 
 
     <x-cards></x-cards>

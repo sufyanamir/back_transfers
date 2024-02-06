@@ -9,41 +9,38 @@
         </div>
 
         <div>
-            <div class="coolinput">
-                <label for="input" class="text text-2xl">Email:</label >
-                <input type="text" class="rounded-xl" placeholder="Write here..." name="input" class="input">
-            </div>
+
         </div>
 
         <div>
-            <input type="text" placeholder="password" class="bg-slate-200 py-3 border-none w-full rounded-lg">
+            <x-input :type="'Password'" :label="'password'"></x-input>
         </div>
         <div class="flex justify-between">
-            <div>
+            <div class="flex items-center gap-2">
                 <input type="checkbox">
                 <span>Remember me</span>
             </div>
             <div>
-                <a href="">Lost your password?</a>
+                <a href="/signup">Lost your password?</a>
             </div>
         </div>
         <div>
-            <button class="w-full bg-black   text-white h-10 rounded-lg">Sign In</button>
+            <button class="w-full bg-black   text-white h-[55px] rounded-lg">Sign In</button>
         </div>
         {{-- OR --}}
         <div class="text-center text-2xl font-medium">
             OR
         </div>
         <div>
-            <button class="w-full bg-gray-200  text-black h-10 rounded-lg">Continue GoogLe</button>
+            <button class="w-full bg-gray-200  text-black h-[55px] rounded-lg">Continue GoogLe</button>
 
         </div>
         <div>
-            <button class="w-full bg-blue-500  text-white h-10 rounded-lg">Continue FaceBook</button>
+            <button class="w-full bg-blue-500  text-white h-[55px] rounded-lg">Continue FaceBook</button>
 
         </div>
         <div>
-            <button class="w-full bg-black  text-white h-10 rounded-lg">Continue Apple</button>
+            <button class="w-full bg-black  text-white h-[55px] rounded-lg">Continue Apple</button>
 
         </div>
 

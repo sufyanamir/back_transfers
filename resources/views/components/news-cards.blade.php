@@ -4,7 +4,7 @@
         <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
     </div>
     <div>
-        <img src="{{asset('assets/icons/card1.png')}}" alt="" class="w-72 mx-auto">
+        <img src="https://img.freepik.com/premium-psd/mockup-generic-luxury-city-car_110488-1795.jpg?size=626&ext=jpg&ga=GA1.1.255768399.1706697545&semt=ais" alt="" class="w-72 mx-auto">
         <h1 class="text-white mt-2">travel</h1>
     </div>
 
