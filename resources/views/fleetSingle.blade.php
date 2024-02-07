@@ -2,9 +2,9 @@
 
 <section class=" w-full py-20 bg-black">
     <div>
-       <h1 class="text-white max-w-[1030px] mx-auto  capitalize text-4xl font-montserrat font-semibold">Business Class</h1>
+       <h1 class="text-white max-w-[1030px] mx-auto  capitalize text-4xl font-montserrat font-semibold p-3">Business Class</h1>
        <div>
-        <ul class="text-white flex gap-2 max-w-[1030px] mx-auto">
+        <ul class="text-white flex gap-2 max-w-[1030px] mx-auto p-3">
             <li><a href="/">Home</a></li>/
             <li><a href="/fleets">Our Fleet</a></li>
         </ul>
@@ -13,11 +13,11 @@
 
 </section>
 <div>
-    <img src={{asset('assets/icons/servicesingle.png')}} alt="" class="w-full">
+    <img src={{asset('assets/icons/redcar.jpg')}} alt="" class="w-full">
 </div>
 
 {{--  --}}
-<section class="max-w-[1024px] mx-auto px-20 mt-20">
+<section class="max-w-[1124px] mx-auto px-5 mt-20">
     <div>
         <h1 class="text-4xl font-bold capitalize">Mercedes - Benz E-Class</h1>
     </div>
@@ -96,7 +96,7 @@
         <div class=" cards   ">
             <div class="swiper p-10 cards">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper cards flex gap-2">
+                <div class="swiper-wrapper cards ">
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
@@ -106,22 +106,22 @@
                     <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full" >
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="" >
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
 
                 </div><div class="swiper-slide">
-                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="w-full">
+                    <img src={{asset('assets/icons/fleetslide.png')}} alt="" class="">
 
                 </div>
                   ...
@@ -175,7 +175,7 @@
     <div class="flex flex-wrap gap-5 px-10">
 
 
-        <div class="">
+        <div class=" flex flex-col gap-3">
             <div>
                 <span class="text-xl font-bold">Business Class</span>
             </div>
@@ -197,11 +197,12 @@
             </div>
             {{--  --}}
             <div>
-                <img src={{asset('assets/icons/bussines.png')}} alt="">
+                <img src='https://images.unsplash.com/photo-1617650728468-8581e439c864?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FycyUyMHdhbGxwYXBlcnN8ZW58MHwwfDB8fHww' alt="" class="w-full">
             </div>
         </div>
-        <div>
-            <div class=" bg-lightGreen rounded-xl flex flex-col gap-4 w-[400px] p-5">
+        {{-- =========== --}}
+        <div class="md:mt-32">
+            <div class=" bg-lightGreen rounded-xl flex flex-col gap-4 max-w[400px] p-5">
                 <div class="flex justify-between ">
                     <div><h1>Hourly rate (minimum 3 hours)</h1></div>
                     <div>$29</div>

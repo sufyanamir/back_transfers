@@ -7,7 +7,7 @@
         <h3>Dashboard - <a href="">Edit Profile</a></h3>
     </div>
 
-    <div class="max-w-[600px] px-10 font-montserrat capitalize flex flex-wrap flex-col h-screen py-10">
+    <div class="max-w-[600px] px-10 font-montserrat capitalize flex flex-wrap flex-col h-screen py-10 gap-5">
         <div class="inputGroup">
             <input type="text" required="" autocomplete="off" class="">
             <label for="name">old password</label>

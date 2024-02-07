@@ -35,11 +35,11 @@
   </div>
 
   <div class="flex flex-wrap justify-center">
-    <button class="bg-black w-1/4 hover:bg-orange hover:text-white text-white rounded-[6px] py-2 font-montserrat text-3xl">Submit</button>
+    <button class="bg-black w-1/4 hover:bg-white hover:border  border-black hover:text-black text-white rounded-[6px] py-2 font-montserrat text-3xl">Submit</button>
   </div>
 
 
-
+        
 
 
    </form>

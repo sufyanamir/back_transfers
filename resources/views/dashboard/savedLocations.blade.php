@@ -132,7 +132,7 @@
         <div class="pl-10 pt-5">
             <h1 class="capitalize text-2xl font-semibold">add new location</h1>
         </div>
-        <div class="p-10">
+        <div class="p-10 flex flex-col gap-5">
             <div class=" grid lg:grid-cols-2 gap-5">
                 <div>
                     <div class="inputGroup">

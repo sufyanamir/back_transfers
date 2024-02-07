@@ -5,8 +5,8 @@ const swiper = new Swiper('.swiper', {
     // effect:'coverflow',
     autoplay:true,
     delay:200,
-    speed:800,
-    slidesPerView: 3,
+    speed:500,
+    slidesPerView: 1,
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
@@ -14,12 +14,16 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     // when window width is >= 320px
     360: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      spaceBetween: 50
+    },
+    342: {
+      slidesPerView: 1,
       spaceBetween: 50
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 250
     },
     // when window width is >= 640px
@@ -27,7 +31,23 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       spaceBetween: 40
     },
+    690: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    736: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
     768: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      830: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      834: {
         slidesPerView: 2,
         spaceBetween: 40
       },

@@ -31,11 +31,14 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div> --}}
-        <div
-            class="z-10 absolute top-[30px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
+        
+        {{--  --}}
+        <div class="">
+            <div
+            class="z-10 absolute top-12 header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
             <div class=" font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
-                <p class="text-lg font-light leading-10">Where would you like Go</p>
-                <p class="text-2xl">
+                <p class="lg:text-lg text-sm font-light leading-10">Where would you like Go</p>
+                <p class="lg:text-2xl text-lg">
                     All countries and airports,stations and ports
 
                 </p>
@@ -44,13 +47,13 @@
 
             </div>
         </div>
-        {{--  --}}
+
         <div
-            class="header-content z-20 header_bottom   w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
-            <div class="flex items-center  justify-between">
+            class=" z-20 header_bottom  header-content  w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-5">
+            <div class="flex items-center   justify-between">
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
-                        <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="w-4">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-4">
+                        <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="">
                     </div>
                     <div class="">
                         <span class="font-bold">Date</span>
@@ -64,7 +67,7 @@
                 </div>
                 {{-- date --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/clock.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
@@ -76,7 +79,7 @@
                 </div>
                 {{-- from --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
@@ -98,7 +101,7 @@
                 </div>
                 {{-- to --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/to.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
@@ -119,11 +122,11 @@
                     </div>
                 </div>
                 {{-- search bar --}}
-                <div class="relative">
+                <div class="relative mt-4">
                     <img src="{{ asset('assets/icons/search.svg') }}"alt=""
                         class="absolute top-4 left-2  z-10 bg-black  ">
                     <input type="text" placeholder="Search"
-                        class="relative rounded-full outline-none px-10 w-32 bg-black text-white py-3">
+                        class="relative rounded-full outline-none px-10 w-36 bg-black text-white py-3">
                 </div>
 
 
@@ -134,6 +137,10 @@
 
         </div>
 
+
+
+        </div>
+        
     </div>
 
 
@@ -150,8 +157,8 @@
                 <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="w-4">
             </div>
             <div>
-                <span class="capitalize">Date</span>
-                <p class="font-semibold font-montserrat">Thu, Oct 06, 2022</p>
+                <span class="capitalize font-bold">Date</span>
+                <input type="date" class="border-none bg-transparent rounded-full ">
             </div>
         </div>
         {{-- ========== --}}
@@ -160,28 +167,42 @@
                 <img src="{{ asset('assets/icons/clock.svg') }}" alt="" class="w-4">
             </div>
             <div>
-                <span class="capitalize">time</span>
-                <p class="font-semibold font-montserrat">6 PM : 15</p>
+                <span class="capitalize font-bold">time</span>
+                <input type="time" class="border-none bg-transparent rounded-full">
             </div>
         </div>
         {{-- ============= --}}
         <div class="flex items-center gap-3 bg-slate-200 mx-2 rounded-md p-2">
-            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
-                <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4">
+            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-5">
+                <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4 ">
             </div>
-            <div>
-                <span class="capitalize">from</span>
-                <p class="font-semibold font-montserrat">London City Airport (LCY)</p>
+            <div class="">
+                <span class="capitalize font-bold">from</span>
+                <select id="countries"
+                                class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
             </div>
         </div>
         {{-- ============= --}}
         <div class="flex items-center gap-3 bg-slate-200 mx-2 rounded-md p-2">
-            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+            <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-5">
                 <img src="{{ asset('assets/icons/to.svg') }}" alt="" class="w-4">
             </div>
             <div>
-                <span class="capitalize">To</span>
-                <p class="font-semibold font-montserrat">London City Airport (LCY)</p>
+                <span class="capitalize font-bold">To</span>
+                <select id="countries"
+                                class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
             </div>
         </div>
 
@@ -235,7 +256,7 @@
 </section>
 <hr>
 {{-- =================================================================== --}}
-<section class="py-10 max-w-[1030px] mx-auto my-32">
+<section class="py-10 max-w-[1130px] mx-auto my-32">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
@@ -395,7 +416,7 @@
         <h1 class="text-3xl text-center font-montserrat font-semibold">Make Your Trip Your Way With Us</h1>
     </div>
 </section>
-<section class="lg:w-[1140px] w-full lg:mx-auto grid px-5 gap-4 md:grid-cols-2 lg:grid-cols-3 py-20">
+<section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-5 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
         highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
@@ -483,10 +504,10 @@
         </a>
     </div>
     {{-- cards --}}
-    <div class=" cards h-[400px]">
-        <div class="swiper p-10 cards">
+    <div class=" cards h-[400px] ">
+        <div class="swiper p-10 cards ">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper cards">
+            <div class="swiper-wrapper cards flex gap-5 ">
               <!-- Slides -->
               <div class="swiper-slide">
                 <x-cards></x-cards>

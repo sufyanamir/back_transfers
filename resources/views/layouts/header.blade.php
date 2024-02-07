@@ -12,10 +12,10 @@
 <body>
     <section>
         <!-- ========== HEADER ========== -->
-        <nav class="bg-black border-gray-200 dark:border-gray-700 py-4">
+        <nav class="bg-black border-gray-200 dark:border-gray-700 py-4 px-2">
             <div class="  flex flex-wrap items-center gap-1 justify-between lg:justify-start lg:gap-10 mx-auto ">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-full xxs:w-60" alt="Flowbite Logo" />
+                    <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-full xxs:w-60 w-48 md:px-4" alt="Flowbite Logo" />
                 </a>
                 {{-- ================= --}}
                 {{-- <div class="md:hidden ">
@@ -32,7 +32,7 @@
 
 
                 <button data-collapse-toggle="navbar-multi-level" type="button"
-                    class="inline-flex items-center  w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center  w-10 h-10  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
                     aria-controls="navbar-multi-level" aria-expanded="false">
 
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

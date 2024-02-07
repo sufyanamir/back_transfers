@@ -7,14 +7,14 @@
        <div>
         <ul class="text-white flex gap-2 max-w-[1030px] mx-auto">
             <li><a href="/">Home</a></li>/
-            <li><a href="">services</a></li>
+            <li><a href="/serviceslist">services</a></li>
         </ul>
        </div>
     </div>
 
 </section>
 <div>
-    <img src={{asset('assets/icons/servicesingle.png')}} alt="" class="w-full">
+    <img src={{asset('assets/icons/redcar.jpg')}} alt="" class="w-full  object-contain">
 </div>
 
 {{--  --}}
@@ -94,7 +94,7 @@
 <section class="max-w-[1130px] mx-auto my-10 px-10">
     <div class="grid lg:grid-cols-2 gap-10">
         <div class="flex-1 flex justify-center">
-            <img src={{asset('assets/icons/getair.png')}} alt="">
+            <img src='https://img.freepik.com/premium-photo/car-is-shown-front-dark-background_728472-590.jpg?size=626&ext=jpg&ga=GA1.1.969358918.1707215966&semt=sph' alt="" class="">
         </div>
         <div class="flex-1 flex flex-col gap-10 items-center justify-center">
             <h1 class="text-2xl font-semibold">Get to or from the
@@ -123,7 +123,7 @@
                 <p class="text-center">The price of tickets for low-cost airlines for a specific route has a much larger spread than that of regular airlines. It depends on the time to departure, demand and competition on the route. Unlike regular airlines, low-cost airlines rarely offer cheap tickets more than 3 months before departure. </p>
         </div>
         <div class="flex-1 flex justify-center">
-            <img src={{asset('assets/icons/getair.png')}} alt="" class="h-400">
+            <img src='https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150797034.jpg?size=626&ext=jpg&ga=GA1.1.969358918.1707215966&semt=sph' alt="" class="">
         </div>
 
 

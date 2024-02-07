@@ -30,7 +30,11 @@
 
     left: 50%;
     transform: translate(-50%);
+    
+    
+    
 }
+
 
 .inputGroup {
     font-family: 'Segoe UI', sans-serif;
@@ -57,6 +61,19 @@
     border-radius: 6px;
 
   }
+  .inputGroup input:focus{
+    --tw-ring-color:black !important;
+    --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  border-color:  black !important;
+    
+  }
+  input:focus{
+
+    border-color:  black !important;
+  }
 
   .inputGroup label {
     font-size: 100%;
@@ -80,6 +97,9 @@
     font-family: montserrat;
     border: none;
     outline: none;
+    --tw-ring-color:transparent !important;
+  
+
 
   }
 

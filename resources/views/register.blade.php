@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-<section class="grid lg:grid-cols-2 max-w-full px-20 mx-auto py-20">
+<section class="grid lg:grid-cols-2 max-w-full px-20 mx-auto py-20 font-montserrat">
 
     <div class="flex flex-1 flex-col gap-5 p-4">
         <div class="flex flex-col items-center gap-2">
@@ -8,8 +8,8 @@
             <p>Sign in with this account across the following sites.</p>
         </div>
 
-        <div>
-            <x-input :type="'text'" :label="'username'"></x-input>
+        <div >
+            <x-input :type="'text'" :label="'UserName'"></x-input>
         </div>
         {{--  --}}
         <div>
@@ -57,7 +57,9 @@
 
         </div>
         <div>
-            <button class="w-full  text-blue-700 capitalize h-[55px] rounded-lg">Already a member login</button>
+            <a href="/login">
+                <button class="w-full  text-blue-700 capitalize h-[55px] rounded-lg">Already a member login</button>
+            </a>
             <hr>
 
         </div>
@@ -67,7 +69,7 @@
 
     </div>
     <div class="flex   justify-center p-10 items-center hidden lg:block">
-        <img src={{asset('assets/icons/register.png')}} alt="" class=" w-full h-full">
+        <img src={{asset('assets/icons/register.png')}} alt="" class=" w-full h-full mt-5 ">
     </div>
 
 

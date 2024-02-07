@@ -217,10 +217,10 @@
 
         {{-- avatar============== --}}
 
-<div class="lg:flex items-center lg:gap-2  text-sm font-semibold font-montserrat">
+<div class="lg:flex items-center justify-center lg:gap-2   text-sm font-semibold font-montserrat">
     <span class="hidden lg:block">Usman Mirza</span>
-    <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 rounded-full cursor-pointer" src={{asset('assets/icons/profile.svg')}} alt="User dropdown">
-    <span class="lg:hidden block">Usman Mirza</span>
+    <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 ml-5 lg:ml-0   rounded-full cursor-pointer" src={{asset('assets/icons/profile.svg')}} alt="User dropdown">
+    <span class="lg:hidden block mt-2">Usman Mirza</span>
 </div>
 
 <!-- Dropdown menu -->
