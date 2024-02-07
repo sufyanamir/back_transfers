@@ -210,9 +210,9 @@
             <h1 class="text-center capitalize text-2xl lg:text-3xl font-montserrat font-semibold">Why book your transfers with Backtransfers.com?</h1>
         </div>
         <div class="flex flex-wrap py-10 px-2">
-            <x-servicesCards></x-servicesCards>
-            <x-servicesCards></x-servicesCards>
-            <x-servicesCards></x-servicesCards>
+            <x-services-cards></x-services-cards>
+            <x-services-cards></x-services-cards>
+            <x-services-cards></x-services-cards>
         </div>
 
 
