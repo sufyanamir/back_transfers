@@ -115,7 +115,7 @@ Route::get('/admin/editProfile', function () {
 });
 
 Route::get('/admin/changePassword', function () {
-    return view('admindashboard.changepassword');
+    return view('admindashboard.changePassword');
 });
 Route::get('/admin/invoiceing', function () {
     return view('admindashboard.invoiceing');
