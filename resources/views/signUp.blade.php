@@ -2,7 +2,7 @@
 
 <section class="grid lg:grid-cols-2 max-w-[1030px] mx-auto py-20">
 
-    <div class="flex flex-col gap-5 p-4">
+    <div class="flex flex-col gap-5 ">
         <div class="flex flex-col items-center gap-2">
             <h1 class="text-2xl font-semibold">Sign in</h1>
             <p>Sign in with this account across the following sites.</p>
@@ -48,8 +48,8 @@
 
 
     </div>
-    <div class="flex justify-center p-10 items-center hidden lg:block">
-        <img src={{asset('assets/icons/login.png')}} alt="" class="h-full">
+    <div class="flex flex-1 justify-center p-10 items-center hidden lg:block">
+        <img src={{asset('assets/icons/login.png')}} alt="" class="h-full mt-10">
     </div>
 
 

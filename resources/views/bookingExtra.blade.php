@@ -55,10 +55,10 @@
 
        <section class="py-20 max-w-[1430px] m-auto">
         <div>
-            <h1 class="font-montserrat text-3xl font-semibold capitalize">extra options</h1>
+            <h1 class="font-montserrat text-3xl font-semibold capitalize ml-28">extra options</h1>
         </div>
 
-        <div class="flex flex-wrap justify-evenly gap-10">
+        <div class="flex flex-wrap justify-evenly gap-10 mt-5">
 
            <div class="flex flex-col gap-8">
                      <div class="flex flex-col">
@@ -311,7 +311,7 @@
            <div>
 
 
-            <x-button :text="'click me'"></x-button >
+            
            </div>
            {{-- 2nd div --}}
            <div>

@@ -233,8 +233,8 @@
             </ul>
         </div>
     </aside>
-    <div class=" sm:ml-64">
-    <div class="  p-5 w-full flex  justify-between gap-6">
+    <div class=" sm:ml-64 min-h-[100vh]">
+    <div class="  p-5 w-full flex  justify-between gap-6 ">
         {{-- search bar================ --}}
 
 
@@ -294,5 +294,7 @@
 
 
     </div>
+
+
     <hr>
 

@@ -1,6 +1,7 @@
 @include('layouts.header')
-<section class="Hero  ">
-    <div class="relative Hero ">
+<section class="relative ">
+    <img class=" z-10 w-full object-cover " src={{asset('assets/images/header-image.png')}}
+    <div class=" h-full w-full object-contain z-20 ">
         {{-- <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -29,11 +30,14 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div> --}}
-        <div
-            class="z-10 absolute top-[270px] header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
-            <div class="     font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
-                <p class="text-lg font-light leading-10">Where would you like Go</p>
-                <p class="text-2xl">
+        
+        {{--  --}}
+        <div class="">
+            <div
+            class="z-10 absolute top-12 header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
+            <div class=" font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
+                <p class="lg:text-lg text-sm font-light leading-10">Where would you like Go</p>
+                <p class="lg:text-2xl text-lg">
                     All countries and airports,stations and ports
 
                 </p>
@@ -42,18 +46,18 @@
 
             </div>
         </div>
-        {{--  --}}
-        <div
-            class="header-content z-10 header_bottom   w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-2">
-            <div class="flex items-center  justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
-                        <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="w-4">
-                    </div>
-                    <div>
-                        <span>Date</span>
-                        <div>
 
+        <div
+            class=" z-20 header_bottom  header-content  w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-5">
+            <div class="flex items-center   justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-4">
+                        <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="">
+                    </div>
+                    <div class="">
+                        <span class="font-bold">Date</span>
+                        <div>
+                            {{-- =============================== --}}
                             <input type="date" class="border-none bg-slate-50 rounded-full ">
 
                             {{-- ======================================================= --}}
@@ -62,11 +66,11 @@
                 </div>
                 {{-- date --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/clock.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">time</span>
+                        <span class="capitalize font-bold">time</span>
                         <div>
                             <input type="time" class="border-none bg-slate-100 rounded-full">
                         </div>
@@ -74,11 +78,11 @@
                 </div>
                 {{-- from --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">from</span>
+                        <span class="capitalize font-bold">from</span>
                         <div>
 
 
@@ -96,11 +100,11 @@
                 </div>
                 {{-- to --}}
                 <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
+                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
                         <img src="{{ asset('assets/icons/to.svg') }}" alt="" class="w-4">
                     </div>
                     <div>
-                        <span class="capitalize">to</span>
+                        <span class="capitalize font-bold">to</span>
                         <div>
 
 
@@ -117,11 +121,11 @@
                     </div>
                 </div>
                 {{-- search bar --}}
-                <div class="relative">
+                <div class="relative mt-4">
                     <img src="{{ asset('assets/icons/search.svg') }}"alt=""
-                        class="absolute top-4 left-3  z-10 bg-black  ">
+                        class="absolute top-4 left-2  z-10 bg-black  ">
                     <input type="text" placeholder="Search"
-                        class="relative rounded-full outline-none px-10 w-32 bg-black text-white py-3">
+                        class="relative rounded-full outline-none px-10 w-36 bg-black text-white py-3">
                 </div>
 
 
@@ -132,8 +136,9 @@
 
         </div>
 
-    </div>
 
+
+        </div>
 
 
 

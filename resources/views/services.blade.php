@@ -13,9 +13,10 @@
 <section class="max-w-[1030px] mx-auto flex flex-wrap  gap-10 py-10 lg:justify-start justify-center">
 
 
-<x-service-Cards></x-service-Cards>
-<x-service-Cards></x-service-Cards>
-<x-service-Cards></x-service-Cards>
+<a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
+<a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
+<a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
+
 
 </section>
 
@@ -23,9 +24,9 @@
 <section class="max-w-[1030px] mx-auto flex flex-wrap  gap-10 py-10 lg:justify-start justify-center">
 
 
-    <x-service-Cards></x-service-Cards>
-    <x-service-Cards></x-service-Cards>
-    <x-service-Cards></x-service-Cards>
+    <a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
+    <a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
+    <a href="/servicessingle"><x-service-Cards></x-service-Cards></a>
 
     </section>
 
