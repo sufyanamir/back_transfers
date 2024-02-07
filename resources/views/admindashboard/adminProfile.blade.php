@@ -6,7 +6,7 @@
         <h3>Dashboard - <a href="">Edit Profile</a></h3>
     </div>
 
-    <div class=" bg-white p-10 max-w-[600px] flex flex-col gap-5 flex-wrap ">
+    <div class=" bg-white p-10 max-w-[600px] flex flex-col gap-5 flex-wrap scale-up-hor-center">
         <div class="flex flex-wrap items-center gap-5">
             <div>
                 <img src={{asset('assets/icons/editavatar.png')}} alt="">
