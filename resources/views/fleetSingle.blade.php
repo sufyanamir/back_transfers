@@ -1,10 +1,10 @@
 @include('layouts.header')
 
-<section class=" w-full py-20 bg-black">
+<section class=" w-full py-10 bg-black">
     <div>
-       <h1 class="text-white max-w-[1030px] mx-auto  capitalize text-4xl font-montserrat font-semibold p-3">Business Class</h1>
+       <h1 class="text-white max-w-[1030px] mx-auto  capitalize text-4xl font-montserrat font-semibold ">Business Class</h1>
        <div>
-        <ul class="text-white flex gap-2 max-w-[1030px] mx-auto p-3">
+        <ul class="text-white flex gap-2 max-w-[1030px] mx-auto">
             <li><a href="/">Home</a></li>/
             <li><a href="/fleets">Our Fleet</a></li>
         </ul>

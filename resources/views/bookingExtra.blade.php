@@ -80,13 +80,13 @@
                         </div>
 {{-- buttons --}}
                         <div class="flex  justify-center gap-3">
-                            <div class="w-10 h-10  rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10  rounded-full  border border-slate-500 text-black flex items-center justify-center">
                                 <span class="  text-lg">-</span>
                             </div>
-                            <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10 rounded-full  border border-slate-500 text-black flex items-center justify-center">
                                 <span>1</span>
                             </div>
-                            <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10 rounded-full  border border-slate-500 text-black flex items-center justify-center">
                                 <span>+</span>
                             </div>
 
@@ -114,13 +114,13 @@
                         </div>
 {{-- buttons --}}
                         <div class="flex  gap-3">
-                            <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
                                 <span>-</span>
                             </div>
-                            <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
                                 <span>1</span>
                             </div>
-                            <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+                            <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
                                 <span>+</span>
                             </div>
 
@@ -147,13 +147,13 @@
     </div>
 {{-- buttons --}}
     <div class="flex  gap-3 text-white">
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>-</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>1</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>+</span>
         </div>
 
@@ -180,13 +180,13 @@
     </div>
 {{-- buttons --}}
     <div class="flex  gap-3 text-white">
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>-</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>1</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>+</span>
         </div>
 
@@ -213,13 +213,13 @@
     </div>
 {{-- buttons --}}
     <div class="flex  gap-3 text-white">
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>-</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>1</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>+</span>
         </div>
 
@@ -246,13 +246,13 @@
     </div>
 {{-- buttons --}}
     <div class="flex  gap-3 text-white">
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>-</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>1</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>+</span>
         </div>
 
@@ -279,13 +279,13 @@
     </div>
 {{-- buttons --}}
     <div class="flex  gap-3 text-white">
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>-</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>1</span>
         </div>
-        <div class="w-10 h-10 rounded-full bg-orange text-white flex items-center justify-center">
+        <div class="w-10 h-10 rounded-full border border-slate-500 text-black flex items-center justify-center">
             <span>+</span>
         </div>
 
