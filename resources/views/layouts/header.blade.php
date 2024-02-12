@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="{{ asset('assets/style/style.css') }}">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        @vite(['resources/css/app.css','resources/js/app.js'])
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('assets/style/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <section>
         <!-- ========== HEADER ========== -->
-        <nav class="bg-black border-gray-200 dark:border-gray-700 py-4 px-2">
+        <nav class="bg-black border-gray-200 dark:border-gray-700 py-6 px-2">
             <div class="  flex flex-wrap items-center gap-1 justify-between lg:justify-start lg:gap-10 mx-auto ">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="{{asset('assets/icons/logo.svg')}}" class="lg:w-full xxs:w-60 w-48 md:px-4" alt="Flowbite Logo" />
+                    <img src="{{ asset('assets/icons/logo.svg') }}" class="lg:w-full xxs:w-60 w-48 md:px-4"
+                        alt="Flowbite Logo" />
                 </a>
                 {{-- ================= --}}
                 {{-- <div class="md:hidden ">
@@ -88,11 +92,13 @@
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="/fleets"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet List</a>
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet
+                                            List</a>
                                     </li>
                                     <li>
                                         <a href="/fleetsingle"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet Single</a>
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fleet
+                                            Single</a>
                                     </li>
 
 
@@ -139,11 +145,13 @@
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="/serviceslist"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services List</a>
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services
+                                            List</a>
                                     </li>
                                     <li>
                                         <a href="/servicessingle"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services Single</a>
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services
+                                            Single</a>
                                     </li>
 
 
@@ -172,11 +180,11 @@
                                     <li aria-labelledby="dropdownNavbarLink10">
                                         <button id="doubleDropdownButton3" data-dropdown-toggle="doubleDropdown3"
                                             data-dropdown-placement="right-start" type="button"
-                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Booking Pages<svg
-                                                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Booking
+                                            Pages<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                                             </svg></button>
                                         <div id="doubleDropdown3"
                                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
@@ -189,7 +197,7 @@
                                                 <li>
                                                     <a href="/bookingextra"
                                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">bookingExtra
-                                    </a>
+                                                    </a>
                                                 </li>
                                                 <li>
                                                     <a href="/bookingpassenger"
@@ -216,24 +224,25 @@
                         </li>
                         <li class="">
 
-                            <a href="/login"
-                                <button  
-                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign In
+                            <a href="/login" <button
+                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign
+                                In
                                 </button>
                             </a>
                         </li>
                         <li class="">
                             <a href="/signup">
                                 <button
-                                class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign up
+                                    class="flex items-center justify-between w-full py-3 px-3  md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent ">Sign
+                                    up
                                 </button>
-                               </a>
+                            </a>
                         </li>
 
                     </ul>
                 </div>
 
-               {{-- <div class="float-end text-right mx-auto  flex gap-3">
+                {{-- <div class="float-end text-right mx-auto  flex gap-3">
                 <div class="hidden md:block">
                     <a href="/login">
                         <button class="text-white bg-slate-800 px-5 py-2 rounded-full font-montserrat">sign in</button>

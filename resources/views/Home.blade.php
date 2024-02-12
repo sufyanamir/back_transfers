@@ -1,146 +1,150 @@
 @include('layouts.header')
-<section class="   relative  ">
-    <img class=" z-10 w-full object-cover " src={{asset('assets/images/header-image.png')}} alt="">
+<section class="   relative  md:h-full">
+    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[40vh]" src={{ asset('assets/images/header-image.png') }}
+        alt="background">
+    <div class="bg-black opacity-30  h-full w-full absolute top-0">
 
-    <div class=" h-full w-full object-contain z-20 ">
-        {{-- <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
-                        class="w-full object-cover h-[470px]">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
-                        class="w-full object-cover h-[470px]">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('assets/images/header_image.png') }}" alt=""
-                        class="w-full object-cover h-[470px]">
-                </div>
-
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div> --}}
-        
-        {{--  --}}
+    </div>
+    <div class=" h-full w-full object-contain z-20 px-6 ">
         <div class="">
             <div
-            class="z-10 absolute top-12 header-content w-full lg:max-w-[1024px]   lg:top-[80px]   md:top-[200px]  text-white   ">
-            <div class=" font-montserrat capitalize w-[300px] px-2  m- lg:w-[400px] md:w-full ">
-                <p class="lg:text-lg text-sm font-light leading-10">Where would you like Go</p>
-                <p class="lg:text-2xl text-lg">
-                    All countries and airports,stations and ports
+                class="z-10 absolute header-content w-full lg:max-w-[1100px]     xl:top-[25%] lg:top-[40px]   md:top-[100px] top-10 text-white   ">
+                <div class=" font-montserrat capitalize  px-2  md:w-full ">
+                    <div>
+                        <div class="circle  flex gap-8 items-center">
+                            <button class="h-[50px] w-[50px] bg-gray-600 rounded-full flex items-center justify-center">
+                                <svg width="18" height="18" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 6C11 6.2765 10.7765 6.5 10.5 6.5H2.70705L5.35355 9.1465C5.54905 9.342 5.54905 9.65805 5.35355 9.85355C5.25605 9.95105 5.12805 10 5.00005 10C4.87205 10 4.74406 9.95105 4.64656 9.85355L1.14656 6.35355C0.951064 6.15805 0.951064 5.842 1.14656 5.6465L4.64656 2.1465C4.84206 1.951 5.15805 1.951 5.35355 2.1465C5.54905 2.342 5.54905 2.65803 5.35355 2.85353L2.70705 5.5H10.5C10.7765 5.5 11 5.7235 11 6Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="h-[50px] w-[50px] bg-gray-600 rounded-full flex items-center justify-center">
+                                <svg width="18" height="18" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.8534 5.64645L7.3534 2.14645C7.2559 2.04895 7.12795 2 6.99995 2C6.87195 2 6.74395 2.04895 6.64645 2.14645C6.45095 2.34195 6.45095 2.658 6.64645 2.8535L9.29295 5.5L1.49994 5.5C1.22344 5.5 0.999939 5.7235 0.999939 6C0.999939 6.2765 1.22344 6.5 1.49994 6.5L9.29295 6.5L6.64645 9.14647C6.45095 9.34197 6.45095 9.658 6.64645 9.8535C6.84195 10.049 7.1579 10.049 7.3534 9.8535L10.8534 6.3535C11.0489 6.158 11.0489 5.84195 10.8534 5.64645Z"
+                                        fill="white" />
+                                </svg>
 
-                </p>
+                            </button>
+                            <p class="text-lg font-semibold "><span>1</span> / <span>3</span></p>
+                        </div>
+                    </div>
+                    <p class=" text-lg font-normal leading-10 mt-10">Where would you like Go</p>
+                    <p
+                        class="lg:text-[52px] md:text-[40px] text-[30px]   leading-[52px] lg:leading-[72px] mt-4 font-semibold">
+                        All countries and airports, <br>stations and ports
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <div
+                class=" z-20 header_bottom  header-content  w-[1150px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-5">
+                <div class="flex items-center   justify-between gap-8">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-[#f7f7f7] w-[52px] h-[52px] flex items-center justify-center rounded-full ">
+                            <label for="date"><img src="{{ asset('assets/icons/date.svg') }}" alt="date"
+                                    class=""></label>
+                        </div>
+                        <div class="">
+                            <span class="font-semibold text-[#626262] text-sm">Date</span>
+                            <div>
+                                {{-- =============================== --}}
+                                <input type="date" id="date"
+                                    class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
+
+                                {{-- ======================================================= --}}
+                            </div>
+                        </div>
+                    </div>
+                    {{-- date --}}
+                    <div class="flex items-center gap-3">
+                        <div class="bg-[#f7f7f7] w-[52px] h-[52px] flex items-center justify-center rounded-full ">
+                            <label for="time"><img src="{{ asset('assets/icons/clock.svg') }}" alt="time"
+                                    class=""></label>
+                        </div>
+                        <div class="">
+                            <span class="font-semibold text-[#626262] text-sm">Date</span>
+                            <div>
+                                {{-- =============================== --}}
+                                <input type="time" id="time"
+                                    class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
+
+                                {{-- ======================================================= --}}
+                            </div>
+                        </div>
+                    </div>
+                    {{-- from --}}
+                    <div class="flex items-center gap-3">
+
+                        <div class="bg-[#f7f7f7] w-[52px] h-[52px] flex items-center justify-center rounded-full ">
+                            <label for="countries"><img src="{{ asset('assets/icons/from.svg') }}"
+                                    alt="countries"></label>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-[#626262] text-sm">From</span>
+                            <div>
+
+
+                                <select id="countries" class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
+                                    <option selected>Choose a country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    {{-- to --}}
+
+                    <div class="flex items-center gap-3">
+                        <div class="bg-[#f7f7f7] w-[52px] h-[52px] flex items-center justify-center rounded-full ">
+                            <label for=""><img src="{{ asset('assets/icons/to.svg') }}" alt="time"></label>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-[#626262] text-sm">To</span>
+                            <div>
+
+
+                                <select id="" class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
+                                    <option selected>Choose a country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    {{-- search bar --}}
+                    <div class="relative  flex  items-center">
+                        <a href="#" class="absolute  left-3  z-10">
+                            <img src="{{ asset('assets/icons/search.svg') }}" alt="search" class=" bg-black  ">
+                        </a>
+                        <input type="text" placeholder="Search"
+                            class="relative rounded-full outline-none px-10 w-[131px] bg-black text-white py-3  border-none">
+                    </div>
+
+
+
+                </div>
 
 
 
             </div>
-        </div>
-
-        <div
-            class=" z-20 header_bottom  header-content  w-[1024px]   hidden lg:block rounded-full bg-white absolute bottom-10  py-3 px-5">
-            <div class="flex items-center   justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-4">
-                        <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="">
-                    </div>
-                    <div class="">
-                        <span class="font-bold">Date</span>
-                        <div>
-                            {{-- =============================== --}}
-                            <input type="date" class="border-none bg-slate-50 rounded-full ">
-
-                            {{-- ======================================================= --}}
-                        </div>
-                    </div>
-                </div>
-                {{-- date --}}
-                <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
-                        <img src="{{ asset('assets/icons/clock.svg') }}" alt="" class="w-4">
-                    </div>
-                    <div>
-                        <span class="capitalize font-bold">time</span>
-                        <div>
-                            <input type="time" class="border-none bg-slate-100 rounded-full">
-                        </div>
-                    </div>
-                </div>
-                {{-- from --}}
-                <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
-                        <img src="{{ asset('assets/icons/from.svg') }}" alt="" class="w-4">
-                    </div>
-                    <div>
-                        <span class="capitalize font-bold">from</span>
-                        <div>
-
-
-                            <select id="countries"
-                                class="bg-gray-100 border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Choose a country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
-                            </select>
-
-                        </div>
-                    </div>
-                </div>
-                {{-- to --}}
-                <div class="flex items-center gap-3">
-                    <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full mt-6">
-                        <img src="{{ asset('assets/icons/to.svg') }}" alt="" class="w-4">
-                    </div>
-                    <div>
-                        <span class="capitalize font-bold">to</span>
-                        <div>
-
-
-                            <select id="countries"
-                                class="bg-gray-100 border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Choose a country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
-                            </select>
-
-                        </div>
-                    </div>
-                </div>
-                {{-- search bar --}}
-                <div class="relative mt-4">
-                    <img src="{{ asset('assets/icons/search.svg') }}"alt=""
-                        class="absolute top-4 left-2  z-10 bg-black  ">
-                    <input type="text" placeholder="Search"
-                        class="relative rounded-full outline-none px-10 w-36 bg-black text-white py-3">
-                </div>
-
-
-
-            </div>
 
 
 
         </div>
 
-
-
-        </div>
-        
     </div>
 
 
@@ -179,13 +183,13 @@
             <div class="">
                 <span class="capitalize font-bold">from</span>
                 <select id="countries"
-                                class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Choose a country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
-                            </select>
+                    class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
             </div>
         </div>
         {{-- ============= --}}
@@ -196,13 +200,13 @@
             <div>
                 <span class="capitalize font-bold">To</span>
                 <select id="countries"
-                                class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option selected>Choose a country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="FR">France</option>
-                                <option value="DE">Germany</option>
-                            </select>
+                    class="bg-transparent border-none  text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
             </div>
         </div>
 
@@ -226,25 +230,26 @@
 </section>
 {{-- ============================================================================= --}}
 
-<section class="w-full absolute z-20 py-10 ">
+<section class="w-full absolute z-20 py-10 px-6 ">
 
     <div class="max-w-[1030px]  mx-auto grid gap-10 grid-cols-1 lg:grid-cols-[300px,auto]">
 
         <div class="mx-2">
             <p class="text-lg lg:text-2xl font-medium font-montserrat">The partners who sell our products</p>
         </div>
-        <div class="flex  gap-3 lg:gap-10 items-center">
+        <div class="flex  gap-3 lg:gap-16 items-center  justify-center">
             <div>
-                <img src="{{ asset('assets/icons/company1.svg') }}" alt="">
+                <img src="{{ asset('assets/icons/company1.svg') }}" alt="partner">
+                <img src="{{ asset('assets/icons/company1.svg') }}" alt="partner">
             </div>
             <div>
-                <img src="{{ asset('assets/icons/company2.svg') }}" alt="">
+                <img src="{{ asset('assets/icons/company2.svg') }}" alt="partner">
             </div>
             <div>
-                <img src="{{ asset('assets/icons/company3.svg') }}" alt="">
+                <img src="{{ asset('assets/icons/company3.svg') }}" alt="partner">
             </div>
             <div>
-                <img src="{{ asset('assets/icons/company4.svg') }}" alt="">
+                <img src="{{ asset('assets/icons/company4.svg') }}" alt="partner">
             </div>
         </div>
 
@@ -256,63 +261,98 @@
 </section>
 <hr>
 {{-- =================================================================== --}}
-<section class="py-10 max-w-[1130px] mx-auto my-32">
+<section class="py-10 px-6 lg:max-w-[1130px] mx-auto my-32">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
 
         <h1 class="font-semibold text-3xl">Our Fleet</h1>
-        <a href="/fleets">
+        <a href="/fleets" class="flex  gap-2 items-center">
             <button class="font-medium">More Fleet</button>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_745_563)">
+                <path
+                    d="M15.3033 13.7794C15.0735 13.7794 14.865 13.6863 14.7141 13.5355C14.5633 13.3846 14.4701 13.1761 14.4701 12.9463L14.4701 6.70843L5.28603 15.8925C4.96017 16.2184 4.43338 16.2184 4.10752 15.8925C3.78166 15.5666 3.78166 15.0399 4.10752 14.714L13.2916 5.52992L7.05371 5.52989C6.59291 5.52989 6.22054 5.15751 6.22054 4.69671C6.22054 4.23592 6.593 3.86345 7.0538 3.86345L15.3034 3.86345C15.7642 3.86345 16.1365 4.2358 16.1365 4.6966L16.1365 12.9462C16.1365 13.407 15.7641 13.7794 15.3033 13.7794Z"
+                    fill="#181A1F" />
+            </g>
+            <defs>
+                <clipPath id="clip0_745_563">
+                    <rect width="20" height="20" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
         </a>
     </div>
     {{-- cards --}}
-    <div class=" cards h-[400px]">
-        <div class="swiper p-10 cards">
+    <div>
+        <div class="swiper p-10">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper cards flex gap-5">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
+            <div class="swiper-wrapper flex gap-5">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                ...
             </div>
-            <div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev absolute "></div>
-            <div class="swiper-button-next absolute"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
     </div>
 
+    <div class="flex gap-6  items-center">
+        <button
+            class="swiper-pre flex  justify-center items-center h-[60px] w-[60px] rounded-full border  border-gray-400  ">
+            <svg width="20" height="16" viewBox="0 0 18 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.3334 7C17.3334 7.46083 16.9609 7.83333 16.5001 7.83333H3.51175L7.92258 12.2442C8.24841 12.57 8.24841 13.0967 7.92258 13.4226C7.76008 13.5851 7.54675 13.6667 7.33342 13.6667C7.12008 13.6667 6.90677 13.5851 6.74427 13.4226L0.91094 7.58925C0.585107 7.26341 0.585107 6.73666 0.91094 6.41083L6.74427 0.577505C7.07011 0.251672 7.59675 0.251672 7.92258 0.577505C8.24841 0.903338 8.24841 1.43005 7.92258 1.75589L3.51175 6.16666H16.5001C16.9609 6.16666 17.3334 6.53916 17.3334 7Z"
+                    fill="#181A1F" />
+            </svg>
 
+        </button>
+        <button
+            class="swiper-button flex justify-center items-center h-[60px] w-[60px] rounded-full  border  border-gray-400">
+            <svg width="20" height="16" viewBox="0 0 18 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.089 6.41075L11.2557 0.57742C11.0932 0.41492 10.8799 0.333336 10.6666 0.333336C10.4532 0.333336 10.2399 0.41492 10.0774 0.57742C9.75158 0.903254 9.75158 1.43 10.0774 1.75584L14.4882 6.16667L1.4999 6.16667C1.03906 6.16667 0.666564 6.53917 0.666564 7C0.666564 7.46084 1.03906 7.83334 1.4999 7.83334L14.4882 7.83334L10.0774 12.2441C9.75158 12.5699 9.75158 13.0967 10.0774 13.4225C10.4032 13.7483 10.9298 13.7483 11.2557 13.4225L17.089 7.58917C17.4148 7.26334 17.4148 6.73659 17.089 6.41075Z"
+                    fill="#181A1F" />
+            </svg>
+
+
+        </button>
+
+
+    </div>
 
 </section>
 {{--  how it works --}}
@@ -416,13 +456,13 @@
         <h1 class="text-3xl text-center font-montserrat font-semibold">Make Your Trip Your Way With Us</h1>
     </div>
 </section>
-<section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-5 py-20">
+<section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-10 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-        highest quality standards.'"></x-trip-card>
+                                                                                                                            highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-        highest quality standards.'"></x-trip-card>
+                                                                                                                            highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/travel.svg'" :title="'Private Travel Solutions'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-        highest quality standards.'"></x-trip-card>
+                                                                                                                            highest quality standards.'"></x-trip-card>
 
 
 
@@ -493,63 +533,99 @@
 
 </section>
 {{-- cards repeat slider paste later...... --}}
-<section class="py-10 max-w-[1130px] mx-auto">
+<section class="py-10 px-6 lg:max-w-[1130px] mx-auto my-32">
 
 
     <div class=" flex justify-between mx-2 font-montserrat">
 
-        <h1 class="font-semibold text-3xl">Our Fleet</h1>
-        <a href="/fleets">
-            <button class="font-medium">More Fleet</button>
+        <h1 class="font-semibold text-3xl">Our Services</h1>
+        <a href="/fleets" class="flex gap-2 items-center">
+            <button class="font-medium">More Services </button>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_745_563)">
+                    <path
+                        d="M15.3033 13.7794C15.0735 13.7794 14.865 13.6863 14.7141 13.5355C14.5633 13.3846 14.4701 13.1761 14.4701 12.9463L14.4701 6.70843L5.28603 15.8925C4.96017 16.2184 4.43338 16.2184 4.10752 15.8925C3.78166 15.5666 3.78166 15.0399 4.10752 14.714L13.2916 5.52992L7.05371 5.52989C6.59291 5.52989 6.22054 5.15751 6.22054 4.69671C6.22054 4.23592 6.593 3.86345 7.0538 3.86345L15.3034 3.86345C15.7642 3.86345 16.1365 4.2358 16.1365 4.6966L16.1365 12.9462C16.1365 13.407 15.7641 13.7794 15.3033 13.7794Z"
+                        fill="#181A1F" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_745_563">
+                        <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
         </a>
     </div>
     {{-- cards --}}
-    <div class=" cards h-[400px] ">
-        <div class="swiper p-10 cards ">
+    <div>
+        <div class="swiper p-10">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper cards flex gap-5 ">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
+            <div class="swiper-wrapper flex gap-5">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                    <x-cards></x-cards>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                ...
             </div>
-            <div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div><div class="swiper-slide">
-                <x-cards></x-cards>
-                <div class="swiper-lazy-preloader"></div>
-            </div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev absolute "></div>
-            <div class="swiper-button-next absolute"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
     </div>
 
+    <div class="flex gap-6  items-center">
+        <button
+            class="swiper-pre flex  justify-center items-center h-[60px] w-[60px] rounded-full border  border-gray-400  ">
+            <svg width="20" height="16" viewBox="0 0 18 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.3334 7C17.3334 7.46083 16.9609 7.83333 16.5001 7.83333H3.51175L7.92258 12.2442C8.24841 12.57 8.24841 13.0967 7.92258 13.4226C7.76008 13.5851 7.54675 13.6667 7.33342 13.6667C7.12008 13.6667 6.90677 13.5851 6.74427 13.4226L0.91094 7.58925C0.585107 7.26341 0.585107 6.73666 0.91094 6.41083L6.74427 0.577505C7.07011 0.251672 7.59675 0.251672 7.92258 0.577505C8.24841 0.903338 8.24841 1.43005 7.92258 1.75589L3.51175 6.16666H16.5001C16.9609 6.16666 17.3334 6.53916 17.3334 7Z"
+                    fill="#181A1F" />
+            </svg>
 
+        </button>
+        <button
+            class="swiper-button flex justify-center items-center h-[60px] w-[60px] rounded-full  border  border-gray-400">
+            <svg width="20" height="16" viewBox="0 0 18 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.089 6.41075L11.2557 0.57742C11.0932 0.41492 10.8799 0.333336 10.6666 0.333336C10.4532 0.333336 10.2399 0.41492 10.0774 0.57742C9.75158 0.903254 9.75158 1.43 10.0774 1.75584L14.4882 6.16667L1.4999 6.16667C1.03906 6.16667 0.666564 6.53917 0.666564 7C0.666564 7.46084 1.03906 7.83334 1.4999 7.83334L14.4882 7.83334L10.0774 12.2441C9.75158 12.5699 9.75158 13.0967 10.0774 13.4225C10.4032 13.7483 10.9298 13.7483 11.2557 13.4225L17.089 7.58917C17.4148 7.26334 17.4148 6.73659 17.089 6.41075Z"
+                    fill="#181A1F" />
+            </svg>
+
+
+        </button>
+
+
+    </div>
 
 </section>
 {{-- video section --}}
@@ -715,10 +791,10 @@
         </p>
         <div class="flex gap-4 flex-wrap">
             <a href="">
-                <img src={{ asset('assets/icons/apple.svg') }} alt="">
+                <img src={{ asset('assets/icons/apple.svg') }} alt="apple">
             </a>
             <a href="">
-                <img src={{ asset('assets/icons/google.svg') }} alt="">
+                <img src={{ asset('assets/icons/google.svg') }} alt="google">
             </a>
         </div>
 

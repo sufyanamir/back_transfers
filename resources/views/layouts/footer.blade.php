@@ -1,10 +1,10 @@
 {{--  footer --}}
 
 <section class="w-full">
-    
+
     <footer class="bg-black  text-white ">
         {{-- ===================== --}}
-        <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between font-montserrat">
+        <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between `-montserrat">
            <div class="flex gap-10 flex-wrap">
             <span class="text-sm text-white dark:text-gray-300 sm:text-center"> <a href="https://flowbite.com/"><img src={{asset('assets/icons/logo.svg')}} alt=""></a>
 
