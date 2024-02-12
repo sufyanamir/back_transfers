@@ -3,7 +3,7 @@
 <div class="  p-5 flex flex-wrap justify-between items-center ">
 
     <div>
-        <span>© 2022 Luxride</span>
+        <span class="font-montserrat ">© 2022 <span class="font-semibold">BACKTRANSFERS</span></span>
     </div>
     <div>
         <ul class="flex gap-5 font-montserrat capitalize">

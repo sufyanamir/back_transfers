@@ -4,7 +4,7 @@
     
     <footer class="bg-black  text-white ">
         {{-- ===================== --}}
-        <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between">
+        <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between font-montserrat">
            <div class="flex gap-10 flex-wrap">
             <span class="text-sm text-white dark:text-gray-300 sm:text-center"> <a href="https://flowbite.com/"><img src={{asset('assets/icons/logo.svg')}} alt=""></a>
 
@@ -51,7 +51,7 @@
         {{-- ================= --}}
         <hr class="border-1 border-gray-700">
         <div class="mx-auto w-full ">
-          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 font-montserrat">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Company</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -127,7 +127,7 @@
         </div>
         <hr class="border-1 border-gray-700">
         <div class="px-4 py-6 bg-black md:flex md:items-center md:justify-between">
-            <span class="text-sm text-white dark:text-gray-300 sm:text-center">© 2024 <a href="https://flowbite.com/"> Luxride</a>. All Rights Reserved.
+            <span class="text-sm text-white dark:text-gray-300 sm:text-center">© <span class="font-montserrat">2024</span> <a href="https://flowbite.com/"> <span class="font-montserrat font-bold">BACKTRANSFERS</span></a>. <span class="font-montserrat">All Rights Reserved.</span>
             </span>
             <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
                 <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white">

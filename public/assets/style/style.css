@@ -218,13 +218,6 @@ a.paginate_button.current {
 			/*bg-gray-200*/
 		}
 
-		/*Row Hover*/
-		table.dataTable.hover tbody tr:hover,
-		table.dataTable.display tbody tr:hover {
-			background-color: #ebf4ff;
-			/*bg-indigo-100*/
-		}
-
 		/*Pagination Buttons*/
 		.dataTables_wrapper .dataTables_paginate .paginate_button {
 			font-weight: 700;
@@ -245,7 +238,7 @@ a.paginate_button.current {
 			/*font-bold*/
 			border-radius: .25rem;
 			/*rounded*/
-			background: #667eea !important;
+			/* background: #667eea !important; */
 			/*bg-indigo-500*/
 			border: 1px solid transparent;
 			/*border border-transparent*/
@@ -261,27 +254,11 @@ a.paginate_button.current {
 			/*font-bold*/
 			border-radius: .25rem;
 			/*rounded*/
-			background: #667eea !important;
+			/* background: #667eea !important; */
 			/*bg-indigo-500*/
 			border: 1px solid transparent;
 			/*border border-transparent*/
 		}
-
-		/*Add padding to bottom border */
-		table.dataTable.no-footer {
-			border-bottom: 1px solid #e2e8f0;
-			/*border-b-1 border-gray-300*/
-			margin-top: 0.75em;
-			margin-bottom: 0.75em;
-		}
-
-		/*Change colour of responsive icon*/
-		table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
-		table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-			background-color: #667eea !important;
-			/*bg-indigo-500*/
-		}
-
 
         .scale-up-hor-center {
             -webkit-animation: scale-up-hor-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -407,3 +384,15 @@ a.paginate_button.current {
   }
 
 
+#dataTable .odd{
+  background-color: white !important;
+}
+#dataTable .even{
+  background-color: #fff !important;
+}
+table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.stripe>tbody>tr.odd>.sorting_1{
+  box-shadow: none !important;
+}
+table.dataTable.display>tbody>tr.even>.sorting_1, table.dataTable.order-column.stripe>tbody>tr.even>.sorting_1{
+  box-shadow: none !important;
+}

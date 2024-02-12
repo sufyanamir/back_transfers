@@ -1,7 +1,7 @@
 @include('layouts.header')
 
 
-<section class=" w-full py-20 bg-black">
+<section class=" w-full py-10 bg-black">
     <div>
        <h1 class="text-white max-w-[1030px] mx-auto  capitalize text-4xl font-montserrat font-semibold">Airport Transfer Service</h1>
        <div>

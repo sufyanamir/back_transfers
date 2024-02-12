@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="{{ asset('assets/style/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{asset('assets/style/dataTable.min.css')}}">
-    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel=" stylesheet">
-    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
-	<!--Responsive Extension Datatables CSS-->
-	<link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -141,7 +137,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
+            <ul class="pt-4 mt-4 space-y-2 font-medium ">
                 <li>
                     <a href="/mybookings"
                         class="flex items-center p-2 text-white transition duration-75 rounded-lg  dark:hover:bg-gray-700 dark:text-white group">
