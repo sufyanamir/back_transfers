@@ -51,7 +51,7 @@
         {{-- ================= --}}
         <hr class="border-1 border-gray-700">
         <div class="mx-auto w-full ">
-          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 font-montserrat">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5 ">
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Company</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -70,10 +70,10 @@
                 </ul>
             </div>
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">top cities</h2>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Social  Media</h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Discord Server</a>
+                        <a href="#" class="hover:underline">New York</a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Twitter</a>
@@ -119,9 +119,9 @@
             </div>
             <div>
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Download the App</h2>
-                <div class="flex flex-col gap-2 w-32">
-                    <img src={{asset('assets/icons/google.svg')}} alt="" class="border border-white rounded-xl">
-                    <img src={{asset('assets/icons/apple.svg')}} alt="" class="border border-white rounded-xl w-32">
+                <div class="flex flex-col gap-3 ">
+                   <a href="?"> <img width="180px" src={{asset('assets/icons/google.svg')}} alt="Play Store" class="border border-white rounded-lg"></a>
+                    <a href="?"><img width="180px" src={{asset('assets/icons/apple.svg')}} alt="App Store" class="border border-white rounded-lg "></a>
                 </div>
             </div>
         </div>
