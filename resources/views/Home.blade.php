@@ -2,15 +2,15 @@
 <section class="   relative  md:h-full">
     <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[40vh]" src={{ asset('assets/images/header-image.png') }}
         alt="background">
-    <div class="bg-black opacity-30  h-full w-full absolute top-0">
+    <div class="bg-black opacity-40  h-full w-full absolute top-0">
 
     </div>
     <div class=" h-full w-full object-contain z-20 px-6 ">
         <div class="">
             <div
                 class="z-10 absolute header-content w-full lg:max-w-[1100px]     xl:top-[25%] lg:top-[40px]   md:top-[100px] top-10 text-white   ">
-                <div class=" font-montserrat capitalize  px-2  md:w-full ">
-                    <div>
+                <div class=" capitalize  px-2  md:w-full ">
+                    {{-- <div>
                         <div class="circle  flex gap-8 items-center">
                             <button class="h-[50px] w-[50px] bg-gray-600 rounded-full flex items-center justify-center">
                                 <svg width="18" height="18" viewBox="0 0 12 12" fill="none"
@@ -31,11 +31,11 @@
                             </button>
                             <p class="text-lg font-semibold "><span>1</span> / <span>3</span></p>
                         </div>
-                    </div>
+                    </div> --}}
                     <p class=" text-lg font-normal leading-10 mt-10">Where would you like Go</p>
                     <p
                         class="lg:text-[52px] md:text-[40px] text-[30px]   leading-[52px] lg:leading-[72px] mt-4 font-semibold">
-                        All countries and airports, <br>stations and ports
+                        Your Personal <br>Chauffeur Services
                     </p>
 
 
@@ -91,7 +91,8 @@
                             <div>
 
 
-                                <select id="countries" class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
+                                <select id="fromllocation"
+                                    class="border-none  bg-slate-50 rounded-full   p-0 h-[24px] ">
                                     <option selected>Choose a country</option>
                                     <option value="US">United States</option>
                                     <option value="CA">Canada</option>
@@ -270,18 +271,18 @@
         <a href="/fleets" class="flex  gap-2 items-center">
             <button class="font-medium">More Fleet</button>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_745_563)">
-                <path
-                    d="M15.3033 13.7794C15.0735 13.7794 14.865 13.6863 14.7141 13.5355C14.5633 13.3846 14.4701 13.1761 14.4701 12.9463L14.4701 6.70843L5.28603 15.8925C4.96017 16.2184 4.43338 16.2184 4.10752 15.8925C3.78166 15.5666 3.78166 15.0399 4.10752 14.714L13.2916 5.52992L7.05371 5.52989C6.59291 5.52989 6.22054 5.15751 6.22054 4.69671C6.22054 4.23592 6.593 3.86345 7.0538 3.86345L15.3034 3.86345C15.7642 3.86345 16.1365 4.2358 16.1365 4.6966L16.1365 12.9462C16.1365 13.407 15.7641 13.7794 15.3033 13.7794Z"
-                    fill="#181A1F" />
-            </g>
-            <defs>
-                <clipPath id="clip0_745_563">
-                    <rect width="20" height="20" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_745_563)">
+                    <path
+                        d="M15.3033 13.7794C15.0735 13.7794 14.865 13.6863 14.7141 13.5355C14.5633 13.3846 14.4701 13.1761 14.4701 12.9463L14.4701 6.70843L5.28603 15.8925C4.96017 16.2184 4.43338 16.2184 4.10752 15.8925C3.78166 15.5666 3.78166 15.0399 4.10752 14.714L13.2916 5.52992L7.05371 5.52989C6.59291 5.52989 6.22054 5.15751 6.22054 4.69671C6.22054 4.23592 6.593 3.86345 7.0538 3.86345L15.3034 3.86345C15.7642 3.86345 16.1365 4.2358 16.1365 4.6966L16.1365 12.9462C16.1365 13.407 15.7641 13.7794 15.3033 13.7794Z"
+                        fill="#181A1F" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_745_563">
+                        <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
         </a>
     </div>
     {{-- cards --}}
@@ -458,11 +459,11 @@
 </section>
 <section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-10 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/travel.svg'" :title="'Private Travel Solutions'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                highest quality standards.'"></x-trip-card>
 
 
 
@@ -666,7 +667,23 @@
         <div class=" flex flex-wrap justify-between mx-2 font-montserrat">
 
             <h1 class="font-semibold text-3xl">Latest From News</h1>
-            <button class="font-medium">More news</button>
+            <div class="flex gap-3 items-center">
+                <button class="font-medium">More news</button>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_745_502)">
+                        <path
+                            d="M15.3033 13.7794C15.0735 13.7794 14.865 13.6863 14.7141 13.5355C14.5633 13.3846 14.4701 13.1761 14.4701 12.9463L14.4701 6.70843L5.28603 15.8925C4.96017 16.2184 4.43338 16.2184 4.10752 15.8925C3.78166 15.5666 3.78166 15.0399 4.10752 14.714L13.2916 5.52992L7.05371 5.52989C6.59291 5.52989 6.22054 5.15751 6.22054 4.69671C6.22054 4.23592 6.593 3.86345 7.0538 3.86345L15.3034 3.86345C15.7642 3.86345 16.1365 4.2358 16.1365 4.6966L16.1365 12.9462C16.1365 13.407 15.7641 13.7794 15.3033 13.7794Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_745_502">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
         </div>
         {{-- cards --}}
         <div class="flex  flex-wrap gap-10 justify-center lg:justify-start pt-20">
@@ -807,3 +824,13 @@
     </div>
 </section>
 @include('layouts.footer')
+
+<script>
+
+    // set currunt data and time in  headerbar
+    let currentDate = new Date();
+    let currentDataValue = currentDate.toISOString().slice(0, 10);
+    let currentTimeValue = currentDate.toTimeString().slice(0, 5);
+    let date = document.getElementById('date').value = currentDataValue;
+    let time = document.getElementById('time').value = currentTimeValue;
+</script>
