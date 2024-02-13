@@ -1,45 +1,49 @@
 @include('layouts.header')
 <main class="max-w-full m-auto p-5">
-    <div class="vehicals    pt-10 font-montserrat grid md:grid-cols-2 gap-5 lg:grid-cols-4">
+    <div class="vehicals  max-w-[1130px] mx-auto  pt-10 font-montserrat grid md:grid-cols-2 gap-5 lg:grid-cols-4">
         <div class=" flex items-center   border-b-2 border-b-gray-800 justify-between w-full  lg:max-w-[300px] p-4">
-            <div>
+            <div class="flex items-center gap-3">
                 <img src={{asset('assets/icons/booking.svg')}} alt="">
+                <div>
+                    <span class="text-lg">Vehicle</span>
+                </div>
             </div>
-            <div>
-                <span class="text-2xl">Vehicle</span>
-            </div>
+           
               <span class="text-3xl font-bold">01</span>
 
         </div>
         {{--  --}}
-        <div class=" flex items-center justify-between border-b-2 border-b-gray-800  w-full lg:max-w-[300px] p-4">
-            <div>
+        <div class=" flex items-center justify-between border-b-2 border-b-gray-200  w-full lg:max-w-[300px] p-4">
+            <div class="flex items-center gap-3">
                 <img src={{asset('assets/icons/extras.svg')}} alt="">
+                <div>
+                    <span class="text-lg">Extras</span>
+                </div>
             </div>
-            <div>
-                <span class="text-2xl">Extras</span>
-            </div>
+            
               <span class="text-3xl font-bold">02</span>
 
         </div>
-        <div class=" flex items-center justify-between border-b-2 border-b-gray-800  w-full lg:max-w-[300px] p-4">
-            <div>
+        <div class=" flex items-center justify-between border-b-2 border-b-gray-200 w-full lg:max-w-[300px] p-4">
+            <div class="flex items-center gap-3">
                 <img src={{asset('assets/icons/details.svg')}} alt="">
+                <div>
+                    <span class="text-lg">Details</span>
+                </div>
             </div>
-            <div>
-                <span class="text-2xl">Details</span>
-            </div>
+            
               <span class="text-3xl font-bold">03</span>
 
         </div>
-        <div class=" flex items-center justify-between border-b-2 border-b-gray-800
+        <div class=" flex items-center justify-between border-b-2 border-b-gray-200
          w-full lg:max-w-[300px] p-4">
-            <div>
+            <div class="flex items-center gap-3">
                 <img src={{asset('assets/icons/payment.png')}} alt="">
+                <div>
+                    <span class="text-lg">payment</span>
+                </div>
             </div>
-            <div>
-                <span class="text-2xl">payment</span>
-            </div>
+            
               <span class="text-3xl font-bold">04</span>
 
         </div>

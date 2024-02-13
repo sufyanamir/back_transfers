@@ -1,4 +1,4 @@
-<div class="max-w-full xl:w-[900px]  p-4 bg-gray-50 rounded-xl  shadow-2xl font-montserrat">
+<div class=" booking_card max-w-full xl:w-[900px]  p-4 bg-white rounded-xl hover:bg-lightGreen cursor-pointer  shadow-sm border border-slate-100 font-montserrat">
    <div class="grid  grid-cols-1 lg:grid-cols-[450px,auto]">
     {{-- 1st================================== --}}
          <div class="">
@@ -62,7 +62,7 @@
                 </div>
                 {{-- 4th --}}
                 <div>
-                    <button class="bg-black text-white px-3 py-4 rounded-xl w-full">SELECT</button>
+                    <button class="  btn bg-black text-white px-3 py-4 rounded-xl w-full flex justify-center gap-2">SELECT </button>
 
                 </div>
             </div>
