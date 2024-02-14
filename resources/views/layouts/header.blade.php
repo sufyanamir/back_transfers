@@ -19,39 +19,21 @@
     <!-- ========== HEADER ========== -->
     <nav class="bg-black border-gray-200 dark:border-gray-700 py-4 px-6 sticky top-0  z-50">
         <div class="flex justify-between">
-            <div class="  flex flex-wrap items-center gap-1   lg:gap-10  px-4">
+            <div class="  flex flex-wrap items-center gap-1   lg:gap-10  px-1">
                 <a
                     href="/" ">
-                    <img src="{{ asset('assets/icons/logo.svg') }}" class="lg:w-[314px] xxs:w-60 w-48
+                    <img src="{{ asset('assets/icons/logo.svg') }}" class="md:block hidden lg:w-[314px] w-48
                         alt="Back Transfers" />
+
+                    <img src="{{ asset('assets/icons/favicon.svg') }}" class=" w-[80px] md:hidden  block
+                        alt="Back Transfers" />
+
                 </a>
-                {{-- ================= --}}
-                {{-- <div class="md:hidden ">
-                    <a href="">
-                        <button class="text-white bg-slate-800 px-5 py-2 rounded-full">sign in</button>
-                    </a>
-                 </div>
-                 <div class="md:hidden">
-                   <a href="">
-                    <button class="text-white bg-slate-800 px-5 py-2 rounded-full">sign up</button>
-                   </a>
-                 </div> --}}
-                {{-- ================= --}}
 
 
-                <button data-collapse-toggle="navbar-multi-level" type="button"
-                    class="inline-flex items-center  w-10 h-10  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
-                    aria-controls="navbar-multi-level" aria-expanded="false">
-
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
                     <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white">
+                        class="xl:flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white hidden  xl:block">
 
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -229,7 +211,7 @@
             <div class=" flex gap-3  items-center justify-end">
                 <div>
                     {{-- ==========languge dropdown================ --}}
-                    <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                    <button type="button" data-dropdown-toggle="language-dropdown"
                         class="inline-flex items-center font-semibold justify-center px-4 py-2 text-sm text-white  dark:text-white rounded-lg cursor-pointer">
                         <svg class="w-6 h-6 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
@@ -264,7 +246,7 @@
                     </button>
                     <!-- Dropdown -->
                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
-                        id="language-dropdown-menu">
+                        id="language-dropdown">
                         <ul class="py-2 font-medium" role="none">
                             <li>
                                 <a href="lang?lang=en"
@@ -339,8 +321,9 @@
                     </a>
                 </div>
                 <div class="ml-4">
-                    <button>
-                        <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                    <button data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+                        aria-controls="drawer-navigation">
+                        <svg width="22" height="14" viewBox="0 0 20 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="20" height="2" fill="white" />
                             <rect y="10" width="20" height="2" fill="white" />
@@ -355,6 +338,134 @@
 
 
 
+
+
+
+
+    <!-- drawer component -->
+    <div id="drawer-navigation"
+        class="fixed top-0 left-0  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white md:w-64 w-full z-50"
+        tabindex="-1" aria-labelledby="drawer-navigation-label">
+        <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+            class="text-black bg-transparent  hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center ">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+        </button>
+        <div class="py-6 overflow-y-auto ">
+            <ul class="space-y-2 font-medium">
+                <li class="mt-4">
+                    <a href="/" class="p-2 text-[#181A1F]  text-xl   group">
+                        <span class="ms-3">Home</span>
+                    </a>
+                </li>
+                <li class="mt-5">
+                    <button type="button"
+                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75  group "
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+
+                        <span class="flex-1 ms-3 text-left  text-[#181A1F]  text-xl">Pages</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-2 space-y-2 ml-10">
+                        <li>
+                            <a href="#" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Faq</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="mt-5">
+                    <button type="button"
+                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75  group "
+                        aria-controls="fleet" data-collapse-toggle="fleet">
+
+                        <span class="flex-1 ms-3 text-left  text-[#181A1F]  text-xl">Our Fleet</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="fleet" class="hidden ml-10 py-2 space-y-2">
+                        <li>
+                            <a href="fleets" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fleetsingle" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
+                                Details</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="mt-5">
+                    <button type="button"
+                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75  group "
+                        aria-controls="service" data-collapse-toggle="service">
+
+                        <span class="flex-1 ms-3 text-left  text-[#181A1F]  text-xl">Services</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="service" class="hidden py-2 ml-10 space-y-2">
+                        <li>
+                            <a href="serviceslist" class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px]">Services List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="servicessingle" class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px] ">Services
+                                </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="mt-5">
+                    <button type="button"
+                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75  group "
+                        aria-controls="booking" data-collapse-toggle="booking">
+
+                        <span class="flex-1 ms-3 text-left  text-[#181A1F]  text-xl">Booking</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="booking" class="hidden ml-10 py-2 space-y-2">
+                        <li>
+                            <a href="booking" class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking</a>
+                        </li>
+                        <li>
+                            <a href="bookingrecieved" class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking Recieved</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
 
     <!-- ========== END HEADER ========== -->

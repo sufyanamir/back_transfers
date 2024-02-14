@@ -1,19 +1,19 @@
 {{--  footer --}}
 
 <section class="w-full bg-black relative  overflow-hidden">
-    <svg class="absolute top-[-200px] z-1 opacity-10" width="1284" height="595" viewBox="0 0 1284 595" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute top-[-200px] right-[20%] z-1 opacity-10" width="1284" height="595" viewBox="0 0 1284 595"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M0.677246 610.01L1239.35 -104.972L1283.83 -27.9457L45.1578 687.036L0.677246 610.01Z" fill="#22C58B" />
     </svg>
 
-    <svg class="absolute bottom-0 z-1 opacity-10 right-[100px]" width="887" height="580" viewBox="0 0 887 388"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute bottom-[10%]  md:bottom-0 z-1 opacity-10 right-[-100px] md:right-[10%]" width="887"
+        height="580" viewBox="0 0 887 388" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M0.941406 486.067L842.527 0.289307L887.01 77.3181L45.4243 563.096L0.941406 486.067Z" fill="#E95440" />
     </svg>
-    <svg class="absolute top-0 z-1 opacity-10 right-[-200px]" width="600" height="500" viewBox="0 0 887 388"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute top-[50%] md:top-0 z-1 opacity-10 right-[-200px]" width="600" height="600"
+        viewBox="0 0 887 388" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M0.941406 486.067L842.527 0.289307L887.01 77.3181L45.4243 563.096L0.941406 486.067Z" fill="#E95440" />
     </svg>
@@ -23,11 +23,11 @@
             {{-- ===================== --}}
             <div class="px-4 py-3   md:flex md:items-center md:justify-between relative">
                 <div class="flex gap-10 flex-wrap items-center justify-center">
-                    <span class="text-sm text-white dark:text-gray-300 sm:text-center"> <a><img
+                    <span class="text-sm  hidden lg:block text-white dark:text-gray-300 sm:text-center"> <a><img
                                 src={{ asset('assets/icons/logo.svg') }} alt="Back  Transfers"></a>
 
                     </span>
-                    <span><a href="tel:" class="font-semibold  flex gap-3">
+                    <span><a href="tel:" class="font-semibold  md:flex gap-3 hidden">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_820_2047)">
@@ -47,7 +47,7 @@
                 </div>
 
 
-                <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse items-center">
+                <div class="flex mt-4 sm:justify-center md:mt-0  items-center">
                     <div>
                         <p class="text-white font-semibold ">Follow Us:</p>
                     </div>
@@ -174,25 +174,25 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="col-span-2 md:col-span-1">
                         <h2 class="mb-6 text-lg font-semibold text-white uppercase">Download the App
                         </h2>
-                        <div class="flex flex-col gap-3 ">
-                            <a href="?"> <img width="180px" src={{ asset('assets/icons/google.svg') }}
-                                    alt="Play Store" class="border border-white rounded-lg"></a>
-                            <a href="?"><img width="180px" src={{ asset('assets/icons/apple.svg') }}
-                                    alt="App Store" class="border border-white rounded-lg "></a>
+                        <div class=" md:block flex    gap-3 ">
+                            <div>
+                                <a href="?"> <img src={{ asset('assets/icons/google.svg') }} alt="Play Store"
+                                        class=" border border-white rounded-lg"></a>
+                            </div>
+                            <div>
+                                <a href="?"><img src={{ asset('assets/icons/apple.svg') }} alt="App Store"
+                                        class="md:mt-3  border border-white rounded-lg "></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <hr class="border-1 border-gray-700">
-                <div class="px-4 py-6 md:flex md:items-center md:justify-between">
+                <div class="px-4 py-6 md:flex md:items-center md:justify-between flex-row-reverse  gap-2">
                     <div>
-                        <span class="text-sm text-white dark:text-gray-300 sm:text-center">&copy;
-                            <span>2024</span> <span class=" font-bold">BACKTRANSFERS</span>
-                    </div>
-                    <div>
-                        <div class="flex gap-5 items-center">
+                        <div class="flex gap-5 items-center justify-between">
                             <a class="flex  gap-3" href="?">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -320,6 +320,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-white dark:text-gray-300 flex md:justify-start justify-center md:mt-0  mt-2 ">&copy;
+                            <span class="ml-2"> 2024</span> <span class=" font-bold ml-2">BACKTRANSFERS</span>
                     </div>
                 </div>
 

@@ -156,7 +156,7 @@
 {{-- mobile section --}}
 <section>
 
-    <div class="w-full mt-2 p-2 flex flex-col gap-5 py-10 lg:hidden block">
+    <div class="w-full mt-2 p-2 flex flex-col gap-5 py-10 lg:hidden ">
         <div class="flex items-center gap-3 bg-slate-200 mx-2 rounded-md p-2">
             <div class="bg-gray-300 w-10 h-10 flex items-center justify-center rounded-full">
                 <img src="{{ asset('assets/icons/date.svg') }}" alt="" class="w-4">
@@ -458,11 +458,11 @@
 </section>
 <section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-10 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/travel.svg'" :title="'Private Travel Solutions'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
 
 
 
@@ -561,12 +561,12 @@
     <div>
         <div class="swiper p-10">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper flex gap-5">
+            <div class="swiper-wrapper ">
 
                 <!-- Slides -->
                 <div class="swiper-slide">
                     {{-- =====card======= --}}
-                    <div class="w-[370px] h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
+                    <div class=" h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
                         <a href="?">
                             <div class="relative w-full card-main">
                                 <div>
@@ -610,7 +610,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     {{-- =====card======= --}}
-                    <div class="w-[370px] h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
+                    <div class="w-full h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
                         <a href="?">
                             <div class="relative w-full card-main">
                                 <div>
@@ -654,7 +654,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     {{-- =====card======= --}}
-                    <div class="w-[370px] h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
+                    <div class="w-full h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
                         <a href="?">
                             <div class="relative w-full card-main">
                                 <div>
@@ -698,7 +698,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     {{-- =====card======= --}}
-                    <div class="w-[370px] h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
+                    <div class="w-full h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
                         <a href="?">
                             <div class="relative w-full card-main">
                                 <div>
@@ -742,7 +742,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     {{-- =====card======= --}}
-                    <div class="w-[370px] h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
+                    <div class="w-full h-[400px]  border border-gray-300 rounded-lg  flex flex-col gap-8">
                         <a href="?">
                             <div class="relative w-full card-main">
                                 <div>
@@ -856,8 +856,8 @@
                 <div class="md:w-[470px] ">
                     <div class="absolute top-0">
 
-                        <svg class="z-0" width="120" height="135" viewBox="0 0 120 135" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="z-0 hidden md:block" width="120" height="135" viewBox="0 0 120 135"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.2">
                                 <path
                                     d="M33.5034 2.19013C4.55356 -1.32957 -12.1267 45.0629 17.8681 54.8969C44.0324 63.4755 65.7586 21.9251 41.6639 7.63956"
@@ -970,89 +970,106 @@
 {{-- frequantly ask questions --}}
 <section class=" w-full lg:w-[1100px] mx-auto py-20 px-5">
     <div>
-        <h1 class="text-center text-6xl mb-10 capitalize">Frequently Asked Questions</h1>
+        <h1 class="text-center text-5xl mb-10 font-semibold ">Frequently Asked Questions</h1>
     </div>
 
     <div id="accordion-flush" data-accordion="collapse"
         data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
         data-inactive-classes="text-gray-500 dark:text-gray-400">
-        <h2 id="accordion-flush-heading-1">
-            <button type="button"
-                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-                aria-controls="accordion-flush-body-1">
-                <span>What is Flowbite?</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 5 5 1 1 5" />
-                </svg>
-            </button>
-        </h2>
-        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive
-                    components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-                <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
-                        href="/docs/getting-started/introduction/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing
-                    websites even faster with components on top of Tailwind CSS.</p>
+        <div class="mt-2">
+            <h2 id="accordion-flush-heading-1">
+                <button type="button"
+                    class="flex items-center justify-between w-full py-5 font-medium  border-b border-gray-200  gap-3"
+                    data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                    aria-controls="accordion-flush-body-1">
+                    <span class="text-xl text-black">How do I create an account?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-[16px] text-[#181A1F] font-normal">Sad ipscing elitrsed diamnonu myeir mod,
+                        sadipscing elitrsed dia morem ipsum dolor situamet consetetur loutrytru hury. Lorem ipsum dolor
+                        sitametco nsetetur sa cingelitrse diamonu eirmoid, sad ipscing elitrstrud diamtre ute riyutroui
+                        tout.</p>
+                </div>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-2">
-            <button type="button"
-                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
-                aria-controls="accordion-flush-body-2">
-                <span>Is there a Figma file available?</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 5 5 1 1 5" />
-                </svg>
-            </button>
-        </h2>
-        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using
-                    the Figma software so everything you see in the library has a design equivalent in our Figma file.
-                </p>
-                <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/"
-                        class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the
-                    utility classes from Tailwind CSS and components from Flowbite.</p>
+        <div class="mt-2">
+            <h2 id="accordion-flush-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full py-5 font-medium  border-b border-gray-200  gap-3"
+                    data-accordion-target="#accordion-flush-body-2" aria-expanded="true"
+                    aria-controls="accordion-flush-body-2">
+                    <span class="text-xl text-black">How do I earn Easy Ride Rewards points?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-[16px] text-[#181A1F] font-normal">Sad ipscing elitrsed diamnonu myeir mod,
+                        sadipscing elitrsed dia morem ipsum dolor situamet consetetur loutrytru hury. Lorem ipsum dolor
+                        sitametco nsetetur sa cingelitrse diamonu eirmoid, sad ipscing elitrstrud diamtre ute riyutroui
+                        tout.</p>
+                </div>
             </div>
         </div>
-        <h2 id="accordion-flush-heading-3">
-            <button type="button"
-                class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
-                aria-controls="accordion-flush-body-3">
-                <span>What are the differences between Flowbite and Tailwind UI?</span>
-                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 5 5 1 1 5" />
-                </svg>
-            </button>
-        </h2>
-        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from
-                    Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another
-                    difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers
-                    sections of pages.</p>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite,
-                    Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best
-                    of two worlds.</p>
-                <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-                    <li><a href="https://flowbite.com/pro/"
-                            class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-                    <li><a href="https://tailwindui.com/" rel="nofollow"
-                            class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-                </ul>
+        <div class="mt-2">
+            <h2 id="accordion-flush-heading-3">
+                <button type="button"
+                    class="flex items-center justify-between w-full py-5 font-medium  border-b border-gray-200  gap-3"
+                    data-accordion-target="#accordion-flush-body-3" aria-expanded="true"
+                    aria-controls="accordion-flush-body-2">
+                    <span class="text-xl text-black">How do I become a Captain?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-[16px] text-[#181A1F] font-normal">Sad ipscing elitrsed diamnonu myeir mod,
+                        sadipscing elitrsed dia morem ipsum dolor situamet consetetur loutrytru hury. Lorem ipsum dolor
+                        sitametco nsetetur sa cingelitrse diamonu eirmoid, sad ipscing elitrstrud diamtre ute riyutroui
+                        tout.</p>
+                </div>
             </div>
         </div>
+        <div class="mt-2">
+            <h2 id="accordion-flush-heading-4">
+                <button type="button"
+                    class="flex items-center justify-between w-full py-5 font-medium  border-b border-gray-200  gap-3"
+                    data-accordion-target="#accordion-flush-body-4" aria-expanded="true"
+                    aria-controls="accordion-flush-body-2">
+                    <span class="text-xl text-black">Where can I get more information, support or make a claim?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-[16px] text-[#181A1F] font-normal">Sad ipscing elitrsed diamnonu myeir mod,
+                        sadipscing elitrsed dia morem ipsum dolor situamet consetetur loutrytru hury. Lorem ipsum dolor
+                        sitametco nsetetur sa cingelitrse diamonu eirmoid, sad ipscing elitrstrud diamtre ute riyutroui
+                        tout.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     </div>
 
 
@@ -1140,82 +1157,42 @@
 
 
     const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // effect:'coverflow',
-    autoplay:true,
-    delay:200,
-    speed:500,
-    slidesPerView: 1,
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-    // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    360: {
-      slidesPerView: 1,
-      spaceBetween: 50
-    },
-    342: {
-      slidesPerView: 1,
-      spaceBetween: 50
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 250
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 40
-    },
-    690: {
-      slidesPerView: 2,
-      spaceBetween: 40
-    },
-    736: {
-      slidesPerView: 2,
-      spaceBetween: 40
-    },
-    768: {
-        slidesPerView: 3,
-        spaceBetween: 40
-      },
-      830: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      834: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 300
-      }
-  },
-    // cardsEffect:{
-    //     depth:400,
-    //     strech:1,
-    //     modifier:1,
-    //     rotate:50,
-    //     scale:1,
-    //     slideshadow:true,
-    // },
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        delay: 200,
+        speed: 500,
+        spaceBetween: 50,
+        slidesPerView: 1,
+        enabled: true,
+        // onlyInViewport: true,
+        pageUpDown: true,
+        // Responsive breakpoints
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 300
+            },
 
-    // If we need pagination
+            834: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            1050: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1100: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button',
-        prevEl: '.swiper-pre',
-    },
+        },
 
-    // And if we need scrollbar
-});
+        navigation: {
+            nextEl: '.swiper-button',
+            prevEl: '.swiper-pre',
+        },
 
-
+    });
 </script>
