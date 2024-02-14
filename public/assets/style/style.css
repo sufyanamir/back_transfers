@@ -380,7 +380,6 @@ a.paginate_button.current {
 #dataTable .odd {
     background-color: #fff !important;
     box-shadow: none;
-
 }
 #dataTable .even {
     background-color: #fff !important;
@@ -389,32 +388,43 @@ a.paginate_button.current {
 table.dataTable.display > tbody > tr.odd > .sorting_1,
 table.dataTable.order-column.stripe > tbody > tr.odd > .sorting_1 {
     box-shadow: none !important;
-
 }
 table.dataTable.display > tbody > tr.even > .sorting_1,
 table.dataTable.order-column.stripe > tbody > tr.even > .sorting_1 {
     box-shadow: none !important;
     background-color: white;
 }
-table.dataTable tbody th, table.dataTable tbody td {
+table.dataTable tbody th,
+table.dataTable tbody td {
     padding: 14px 14px;
     box-shadow: none;
 }
-table.dataTable.stripe>tbody>tr.odd>*, table.dataTable.display>tbody>tr.odd>* {
-    box-shadow: inset 0 0 0 9999px rgb(255, 255, 255); 
-     box-shadow: none !important
+table.dataTable.stripe > tbody > tr.odd > *,
+table.dataTable.display > tbody > tr.odd > * {
+    box-shadow: inset 0 0 0 9999px rgb(255, 255, 255);
+    box-shadow: none !important;
 }
 :root {
     --dt-row-selected: 13, 110, 253;
     --dt-row-selected-text: 255, 255, 255;
     --dt-row-selected-link: 9, 10, 11;
     --dt-row-stripe: 0, 0, 0;
-     --dt-row-hover: none !important;
+    --dt-row-hover: none !important;
     --dt-column-ordering: 0, 0, 0;
     --dt-html-background: white;
 }
-.booking_card:hover .btn{
-    
+.booking_card:hover .btn {
     background-color: orangered;
     transition: all 0.25s;
 }
+
+.card-main {
+    transition: all 0.5s;
+}
+.card-content {
+    display: none;
+
+}
+.card-main:hover .card-content {
+    display: block;
+    }

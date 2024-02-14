@@ -11,7 +11,7 @@
                     <div>Meet & Greet </div>
 
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center ap-2">
                     <div><img src={{asset('assets/icons/cancel.svg')}} alt=""></div>
                     <div>Meet & Greet included</div>
 
