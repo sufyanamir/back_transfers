@@ -312,7 +312,17 @@
         autoplay: false,
         spaceBetween: 30,
 
-        slidesPerView: 2,
+        slidesPerView: 1,
+        breakpoints: {
+
+            834: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+
+        },
+
         navigation: {
             nextEl: '.swiper-button',
             prevEl: '.swiper-pre',

@@ -220,7 +220,6 @@ table.dataTable.no-footer {
 }
 
 
-table.dataTable{
-overflow: hidden;
-position: relative;
+.overflowscrollbar::-webkit-scrollbar{
+display: none;
 }

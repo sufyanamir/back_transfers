@@ -58,84 +58,86 @@
                         <button data-modal-target="addteachermodal" data-modal-toggle="addteachermodal"
                             class="bg-secondary text-white h-12 px-5 rounded-[6px]  shadow-sm font-semibold ">sdlkf)</button>
                     </div>
-                    <table id="datatable" class="overflow-scroll">
-                        <thead class="py-6 text-black">
-                            <tr>
-                                <th>Order ID</th>
-                                <th>Date - Time</th>
-                                <th>From - To</th>
-                                <th>Total</th>
-                                <th>Payment Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                    <div class="relative overflow-x-scroll overflowscrollbar">
+                        <table id="datatable" class="w-full">
+                            <thead class="py-6 text-black">
+                                <tr>
+                                    <th class="whitespace-nowrap">Order ID</th>
+                                    <th class="whitespace-nowrap">Date - Time</th>
+                                    <th class="whitespace-nowrap">From - To</th>
+                                    <th class="whitespace-nowrap">Total</th>
+                                    <th class="whitespace-nowrap">Payment Status</th>
+                                    <th class="whitespace-nowrap">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
 
-                            <tr class="pt-4">
-                                <td>#953</td>
-                                <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
-                                <td>London City Airport (LCY) - New York City Airport</td>
-                                <td>$2,865.03</td>
-                                <td>
-                                    <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
-                                </td>
+                                <tr class="pt-4">
+                                    <td>#953</td>
+                                    <td class=" min-w-[200px]">Thu, Oct 06, 2022 - 6 PM : 15</td>
+                                    <td class="min-w-[250px]">London City Airport (LCY) - New York City Airport</td>
+                                    <td>$2,865.03</td>
+                                    <td>
+                                        <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                                    </td>
 
 
-                                <td>
-                                    <div class="flex gap-5">
+                                    <td>
+                                        <div class="flex gap-5">
 
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                                    </div>
-                                </td>
-                            </tr>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <tr class="pt-4">
-                                <td>#953</td>
-                                <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
-                                <td>London City Airport (LCY) - New York City Airport</td>
-                                <td>$2,865.03</td>
-                                <td>
-                                    <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
-                                </td>
-
-
-                                <td>
-                                    <div class="flex gap-5">
-
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="pt-4">
-                                <td>#953</td>
-                                <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
-                                <td>London City Airport (LCY) - New York City Airport</td>
-                                <td>$2,865.03</td>
-                                <td>
-                                    <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
-                                </td>
+                                <tr class="pt-4">
+                                    <td>#953</td>
+                                    <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
+                                    <td>London City Airport (LCY) - New York City Airport</td>
+                                    <td>$2,865.03</td>
+                                    <td>
+                                        <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                                    </td>
 
 
-                                <td>
-                                    <div class="flex gap-5">
+                                    <td>
+                                        <div class="flex gap-5">
 
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="pt-4">
+                                    <td>#953</td>
+                                    <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
+                                    <td>London City Airport (LCY) - New York City Airport</td>
+                                    <td>$2,865.03</td>
+                                    <td>
+                                        <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                                    </td>
+
+
+                                    <td>
+                                        <div class="flex gap-5">
+
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @include('layouts.header')
 <section class="   relative  md:h-full">
-    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[40vh]" src={{ asset('assets/images/header-image.png') }}
+    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[60vh] md:h-[40vh]" src={{ asset('assets/images/header-image.png') }}
         alt="background">
     <div class="bg-black opacity-40  h-full w-full absolute top-0">
 

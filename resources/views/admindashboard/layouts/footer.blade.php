@@ -1,9 +1,8 @@
-
 <hr class="border border-gray-300">
-<!-- <div class="  p-5 flex flex-wrap justify-between items-center ">
+<div class="  p-5 flex flex-wrap justify-between items-center  bg-slate-50 ">
 
     <div>
-        <span>© 2022 BACKTRANSFERS</span>
+        <span class="font-montserrat ">© 2022 <span class="font-semibold">BACKTRANSFERS</span></span>
     </div>
     <div>
         <ul class="flex gap-5 font-montserrat capitalize">
@@ -14,30 +13,20 @@
         </ul>
     </div>
 
-</div> -->
 </div>
-<script src="../path/to/datatables.min.js"></script>
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{{asset('assets/js/dataTable.min.js')}}"></script>
-<script src="{{asset('assets/js/custom.js')}}"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</div>
+</div>
 
-	<!--Datatables -->
-	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-	<script>
-		$(document).ready(function() {
-
-			var table = $('#example').DataTable({
-					responsive: true
-				})
-				.columns.adjust()
-				.responsive.recalc();
-		});
-	</script>
-
-<script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
-<link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{ asset('assets/js/dataTable.min.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $('#datatable').DataTable();
+    });
+</script>
 </body>
+
 </html>

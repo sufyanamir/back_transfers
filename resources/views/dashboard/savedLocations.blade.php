@@ -8,7 +8,7 @@ display: none
 </style>
 </style>
 <section class="w-full  bg-slate-100 pb-10 ">
-    <div class="px-10 py-5 flex justify-between">
+    <div class="md:px-10 px-2 py-5 flex justify-between">
         <div>
             <h1 class="text-2xl font-medium capitalize">Saved Location</h1>
             <h3>Dashboard - <a href="">Edit Profile</a></h3>
@@ -40,41 +40,43 @@ display: none
 
             <div class="shadow-dark mt-3  rounded-xl pt-8  bg-white min-h-[500px]">
                 <div class="p-4">
-                    <table id="datatable" class="overflow-scroll">
-                        <thead class="my-6 px-10 text-black">
-                            <tr class="bg-[#f2f2f2] ">
-                                <th>Title</th>
-                                <th>Country</th>
-                                <th>City</th>
-                                <th>Creation Date</th>
+                    <div class="relative overflow-x-scroll overflowscrollbar">
+                        <table id="datatable" class="overflow-scroll">
+                            <thead class="my-6 px-10 text-black">
+                                <tr class="bg-[#f2f2f2] ">
+                                    <th  class="whitespace-nowrap">Title</th>
+                                    <th  class="whitespace-nowrap">Country</th>
+                                    <th  class="whitespace-nowrap">City</th>
+                                    <th  class="whitespace-nowrap">Creation Date</th>
 
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr class="pt-4">
-                                <td>London City Airport (LCY)</td>
-                                <td>UK</td>
-                                <td>London</td>
-                                <td>Thu, Oct 06, 2022</td>
-
-                                <td>
-                                    <div class="flex gap-5">
-
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                        <a class="cursor-pointer" href="#"><img width="38px"
-                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
 
-                        </tbody>
-                    </table>
+                                <tr class="pt-4">
+                                    <td class="min-w-[150px]">London City Airport (LCY)</td>
+                                    <td>UK</td>
+                                    <td>London</td>
+                                    <td class="min-w-[150px]">Thu, Oct 06, 2022</td>
 
+                                    <td>
+                                        <div class="flex gap-5">
+
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                            <a class="cursor-pointer" href="#"><img width="38px"
+                                                    src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
                 </div>
             </div>
             <!--/Card-->
@@ -85,10 +87,10 @@ display: none
         {{--  --}}
         <div class="shadow-dark mt-10  rounded-xl pt-8  bg-white mx-10 ">
             <div class="w-[70%]">
-                <div class="pl-10 pt-5">
+                <div class="md:pl-10  pl-2 pt-5">
                     <h1 class="capitalize text-2xl font-semibold">add new location</h1>
                 </div>
-                <div class="p-10 flex flex-col gap-5">
+                <div class="md:p-10 p-2 flex flex-col gap-5">
                     <div class=" grid lg:grid-cols-2 gap-5">
                         <div>
                             <div class="inputGroup">
@@ -141,7 +143,7 @@ display: none
 
 
 
-                <div class="px-10">
+                <div class="md:px-10 px-2">
                     <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
                             marginheight="0" marginwidth="0"
                             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=current%20location+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
