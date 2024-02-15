@@ -218,3 +218,9 @@ border-bottom: 1px solid #E5E5E5;
 table.dataTable.no-footer {
     border-bottom: 1px solid #E5E5E5;
 }
+
+
+table.dataTable{
+overflow: hidden;
+position: relative;
+}
