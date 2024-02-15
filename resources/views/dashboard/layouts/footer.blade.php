@@ -1,5 +1,5 @@
 <hr class="border border-gray-300">
-<div class="  p-5 flex flex-wrap justify-between items-center ">
+<div class="  p-5 flex flex-wrap justify-between items-center  bg-slate-50 ">
 
     <div>
         <span class="font-montserrat ">© 2022 <span class="font-semibold">BACKTRANSFERS</span></span>

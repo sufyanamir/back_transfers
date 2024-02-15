@@ -1,137 +1,112 @@
 @include('dashboard.layouts.header')
-  <section>
+  <section class="bg-slate-50 ">
+    <div class="p-5 px-10 flex flex-col">
+        <span class="text-2xl font-semibold font-montserrat">Dashboard</span>
+        <span>Dashboard - Edit rofile</span>
 
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        title
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        country
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        City
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        creation date
-                    </th>
-                    <th scope="col" class="px-6 py-3">
-                        Action
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr
-                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Apple MacBook Pro 17"
-                    </th>
-                    <td class="px-6 py-4">
-                        Silver
-                    </td>
-                    <td class="px-6 py-4">
-                        Laptop
-                    </td>
-                    <td class="px-6 py-4">
-                        $2999
-                    </td>
-                    <td class="px-6 py-4">
-                        <a href="#"
-                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr
-                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Microsoft Surface Pro
-                    </th>
-                    <td class="px-6 py-4">
-                        White
-                    </td>
-                    <td class="px-6 py-4">
-                        Laptop PC
-                    </td>
-                    <td class="px-6 py-4">
-                        $1999
-                    </td>
-                    <td class="px-6 py-4">
-                        <a href="#"
-                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr
-                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
-                    </th>
-                    <td class="px-6 py-4">
-                        Black
-                    </td>
-                    <td class="px-6 py-4">
-                        Accessories
-                    </td>
-                    <td class="px-6 py-4">
-                        $99
-                    </td>
-                    <td class="px-6 py-4">
-                        <a href="#"
-                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr
-                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Google Pixel Phone
-                    </th>
-                    <td class="px-6 py-4">
-                        Gray
-                    </td>
-                    <td class="px-6 py-4">
-                        Phone
-                    </td>
-                    <td class="px-6 py-4">
-                        $799
-                    </td>
-                    <td class="px-6 py-4">
-                        <a href="#"
-                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Apple Watch 5
-                    </th>
-                    <td class="px-6 py-4">
-                        Red
-                    </td>
-                    <td class="px-6 py-4">
-                        Wearables
-                    </td>
-                    <td class="px-6 py-4">
-                        $999
-                    </td>
-                    <td class="px-6 py-4">
-                        <a href="#"
-                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    </div>
+    <div class="mt-8 mx-10 ">
+
+        <div class="shadow-dark mt-3  rounded-xl pt-8  bg-white min-h-[500px]">
+            <div>
+                <div class="flex justify-between px-[20px] mb-3">
+                    <h3 class="text-[20px] text-black">Current Booking</h3>
+                    <button data-modal-target="addteachermodal" data-modal-toggle="addteachermodal"
+                        class="bg-secondary text-white h-12 px-5 rounded-[6px]  shadow-sm font-semibold ">sdlkf)</button>
+                </div>
+                <table id="datatable" class="overflow-scroll">
+                    <thead class="py-6 text-black">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date - Time</th>
+                            <th>From - To</th>
+                            <th>Total</th>
+                            <th>Payment Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+                        <tr class="pt-4">
+                            <td>#953</td>
+                            <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
+                            <td>London City Airport (LCY) - New York City Airport</td>
+                            <td>$2,865.03</td>
+                            <td>
+                                <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                            </td>
+
+
+                            <td>
+                                <div class="flex gap-5">
+
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="pt-4">
+                            <td>#953</td>
+                            <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
+                            <td>London City Airport (LCY) - New York City Airport</td>
+                            <td>$2,865.03</td>
+                            <td>
+                                <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                            </td>
+
+
+                            <td>
+                                <div class="flex gap-5">
+
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="pt-4">
+                            <td>#953</td>
+                            <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
+                            <td>London City Airport (LCY) - New York City Airport</td>
+                            <td>$2,865.03</td>
+                            <td>
+                                <button class="bg-[#F7F3FF] text-[#8442FF] py-2 px-4">Pending</button>
+                            </td>
+
+
+                            <td>
+                                <div class="flex gap-5">
+
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <!--/Card-->
+
+
     </div>
     {{--  --}}
-    <div class="pl-10 pt-5 ">
-        <h1 class="capitalize text-2xl font-semibold">add new location</h1>
+<div class="shadow-dark mt-8 pb-10 mx-10  rounded-xl   bg-white px-10">
+    <div class=" pt-3 ">
+        <h1 class="capitalize text-2xl font-semibold mt-10">Single Booking</h1>
     </div>
     {{-- boxes --}}
-    <div class="px-10 py-10 flex flex-wrap gap-5 justify-center ">
-        <div class="w-[400px] border border-slate-200 p-10 font-montserrat">
+    <div class=" mt-8 flex flex-wrap gap-5 ">
+        <div class="w-[400px] border p-10">
              <h1 class="text-2xl font-semibold">Order Summary</h1>
           <div class="grid grid-cols-2 pt-5">
             <div class="flex flex-col flex-wrap gap-3">
@@ -308,6 +283,7 @@
 
 
     </div>
+</div>
 
 
 

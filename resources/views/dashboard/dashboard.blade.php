@@ -37,7 +37,8 @@
                 </div>
             </div>
             {{--  --}}
-            <div class="flex items-center gap-5 justify-center  py-10 rounded-xl bg-white shadow-dark   dark:bg-gray-800">
+            <div
+                class="flex items-center gap-5 justify-center  py-10 rounded-xl bg-white shadow-dark   dark:bg-gray-800">
                 <div class="bg-slate-100 rounded-xl w-14 h-14 flex justify-center items-center">
                     <img src={{ asset('assets/icons/location.svg') }} alt="" class="w-8">
                 </div>
@@ -69,6 +70,8 @@
                             </tr>
                         </thead>
                         <tbody>
+
+
                             <tr class="pt-4">
                                 <td>#953</td>
                                 <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
@@ -79,13 +82,17 @@
                                 </td>
 
 
-                                <td class="flex gap-5">
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                <td>
+                                    <div class="flex gap-5">
+
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                    </div>
                                 </td>
                             </tr>
+
                             <tr class="pt-4">
                                 <td>#953</td>
                                 <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
@@ -96,13 +103,17 @@
                                 </td>
 
 
-                                <td class="flex gap-5">
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                <td>
+                                    <div class="flex gap-5">
+
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                    </div>
                                 </td>
                             </tr>
+
                             <tr class="pt-4">
                                 <td>#953</td>
                                 <td>Thu, Oct 06, 2022 - 6 PM : 15</td>
@@ -113,11 +124,14 @@
                                 </td>
 
 
-                                <td class="flex gap-5">
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                    <a class="cursor-pointer" href="#"><img width="38px"
-                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                <td>
+                                    <div class="flex gap-5">
+
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                        <a class="cursor-pointer" href="#"><img width="38px"
+                                                src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>

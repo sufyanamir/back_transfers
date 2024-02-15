@@ -228,7 +228,7 @@
         </div>
     </aside>
     <div class=" sm:ml-64">
-        <nav class="shadow-2xl ">
+        <nav >
             <div class="  p-5 w-full flex  justify-between  ">
                 {{-- search bar================ --}}
 

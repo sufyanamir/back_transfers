@@ -74,7 +74,7 @@ select:focus {
     font: bold;
     position: absolute;
     left: 0;
-    top: -4px;
+    top: 2px;
     padding: 0.9em;
     margin-left: 0.5em;
     pointer-events: none;
@@ -213,7 +213,8 @@ table.dataTable tbody th,
 table.dataTable tbody td {
 padding: 18px 10px !important;
 color: #323C47;
+border-bottom: 1px solid #E5E5E5;
 }
 table.dataTable.no-footer {
-    border-bottom: 1px solid #E1E1E166;
+    border-bottom: 1px solid #E5E5E5;
 }
