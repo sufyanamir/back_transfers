@@ -10,7 +10,8 @@ module.exports = {
     extend: {
         fontFamily: {
             palanquin: ['Palanquin', 'sans-serif'],
-            montserrat: ['Montserrat Light', 'sans-serif'],
+            // montserrat: ['Montserrat Light', 'sans-serif'],
+            DMSans: ['DM Sans', 'sans-serif'],
           },
           colors:{
             "pink":"#FDEEEC",

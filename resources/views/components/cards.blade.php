@@ -1,4 +1,4 @@
-<div class="w-80 shadow-2xl rounded-lg p-5 flex flex-col gap-8">
+<div class="w-80  border border-gray-300 rounded-lg p-5 flex flex-col gap-8">
     <div class="mx-5 mt-5 font-montserrat ">
         <h1 class="font-medium text-lg">Bussiness class</h1>
         <p>Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
