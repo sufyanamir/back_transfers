@@ -13,6 +13,13 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="{{ asset('assets/icons/favicon.svg') }}" type="image/x-icon">
+    <style>
+        @media (max-width: 1290px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -25,15 +32,16 @@
                     <img src="{{ asset('assets/icons/logo.svg') }}" class="md:block hidden lg:w-[314px] w-48
                         alt="Back Transfers" />
 
-                    <img src="{{ asset('assets/icons/favicon.svg') }}" class=" w-[80px] md:hidden  block
+                <img src="{{ asset('assets/icons/favicon.svg') }}"
+                    class=" w-[80px] md:hidden  block
                         alt="Back Transfers" />
 
                 </a>
 
 
-                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                <div class="hidden nav-links w-full md:block md:w-auto" id="navbar-multi-level">
                     <ul
-                        class="xl:flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white hidden  xl:block">
+                        class="xl:flex  flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-white hidden  xl:block">
 
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
@@ -376,14 +384,16 @@
                     </button>
                     <ul id="dropdown-example" class="hidden py-2 space-y-2 ml-10">
                         <li>
-                            <a href="#" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">About</a>
+                            <a href="#"
+                                class="flex items-center w-full p-2  group text-[#626262] text-[16px]">About</a>
                         </li>
                         <li>
                             <a href="#"
                                 class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Contact</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Faq</a>
+                            <a href="#"
+                                class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Faq</a>
                         </li>
                     </ul>
                 </li>
@@ -402,11 +412,13 @@
                     </button>
                     <ul id="fleet" class="hidden ml-10 py-2 space-y-2">
                         <li>
-                            <a href="fleets" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
+                            <a href="fleets"
+                                class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
                             </a>
                         </li>
                         <li>
-                            <a href="fleetsingle" class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
+                            <a href="fleetsingle"
+                                class="flex items-center w-full p-2  group text-[#626262] text-[16px]">Fleet
                                 Details</a>
                         </li>
 
@@ -428,12 +440,15 @@
                     </button>
                     <ul id="service" class="hidden py-2 ml-10 space-y-2">
                         <li>
-                            <a href="serviceslist" class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px]">Services List
+                            <a href="serviceslist"
+                                class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px]">Services
+                                List
                             </a>
                         </li>
                         <li>
-                            <a href="servicessingle" class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px] ">Services
-                                </a>
+                            <a href="servicessingle"
+                                class="flex items-center w-full p-2 text-gray-900pl-11 group text-[#626262] text-[16px] ">Services
+                            </a>
                         </li>
 
                     </ul>
@@ -454,10 +469,13 @@
                     </button>
                     <ul id="booking" class="hidden ml-10 py-2 space-y-2">
                         <li>
-                            <a href="booking" class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking</a>
+                            <a href="booking"
+                                class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking</a>
                         </li>
                         <li>
-                            <a href="bookingrecieved" class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking Recieved</a>
+                            <a href="bookingrecieved"
+                                class="flex items-center w-full p-2 text-[#626262] text-[16px] group ">Booking
+                                Recieved</a>
                         </li>
 
                     </ul>

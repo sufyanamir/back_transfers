@@ -130,7 +130,6 @@ select:focus {
     outline: none;
 }
 
-
 a.paginate_button.current {
     background: #ececec !important;
     border: none !important;
@@ -147,8 +146,6 @@ a.paginate_button.current {
 .cards {
     position: relative;
 }
-
-
 
 :root {
     --dt-row-selected: 13, 110, 253;
@@ -169,14 +166,12 @@ a.paginate_button.current {
 }
 .card-content {
     display: none;
-
 }
 .card-main:hover .card-content {
     display: block;
-    }
+}
 
-
-    input:focus,
+input:focus,
 textarea:focus,
 select:focus {
     --tw-ring-color: transparent !important;
@@ -184,20 +179,20 @@ select:focus {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
-input[type=number]{
+input[type="number"] {
     -moz-appearance: textfield;
 }
-.dataTables_length ,
+.dataTables_length,
 .dataTables_filter,
 .dataTables_info,
-.dataTables_paginate  {
-    margin: 20px ;
+.dataTables_paginate {
+    margin: 20px;
 }
-.dataTables_info{
- color: #ACADAE !important;
+.dataTables_info {
+    color: #acadae !important;
 }
 .dataTables_length select {
     width: 60px;
@@ -206,20 +201,19 @@ input[type=number]{
 .shadow-dark {
     box-shadow: 0px 0px 11px 0px #00000040;
 }
-table.dataTable{
- overflow-x: hidden !important;
+table.dataTable {
+    overflow-x: hidden !important;
 }
 table.dataTable tbody th,
 table.dataTable tbody td {
-padding: 18px 10px !important;
-color: #323C47;
-border-bottom: 1px solid #E5E5E5;
+    padding: 18px 10px !important;
+    color: #323c47;
+    border-bottom: 1px solid #e5e5e5;
 }
 table.dataTable.no-footer {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-
-.overflowscrollbar::-webkit-scrollbar{
-display: none;
+.overflowscrollbar::-webkit-scrollbar {
+    display: none;
 }
