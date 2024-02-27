@@ -161,7 +161,7 @@
 
                 <ul>
                     <li>
-                        <a href="?"
+                        <a href="../Alogout"
                             class="flex mt-10 items-center p-3 text-white transition  rounded-lg bg-[#333333]  group">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -219,20 +219,19 @@
                 {{-- avatar============== --}}
 
                 <div class="lg:flex items-center justify-center lg:gap-2   text-sm font-semibold font-montserrat">
-                    <span class="hidden lg:block">Usman Mirza</span>
+                    <span class="hidden lg:block">Admin</span>
                     <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown"
                         data-dropdown-placement="bottom-start"
                         class="w-10 h-10 ml-5 lg:ml-0   rounded-full cursor-pointer"
                         src={{ asset('assets/icons/profile.svg') }} alt="User dropdown">
-                    <span class="lg:hidden block mt-2">Usman Mirza</span>
                 </div>
 
                 <!-- Dropdown menu -->
                 <div id="userDropdown"
                     class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
-                        <div>Bonnie Green</div>
-                        <div class="font-medium truncate">name@flowbite.com</div>
+                        <div>Admin</div>
+                        <div class="font-medium truncate">{{ session('adminlogin')['email'] }}</div>
                     </div>
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
                         <li>
@@ -249,9 +248,8 @@
                         </li>
                     </ul>
                     <div class="py-1">
-                        <a href="#"
-                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                            out</a>
+                        <a href="../Alogout"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">LogOut</a>
                     </div>
                 </div>
 

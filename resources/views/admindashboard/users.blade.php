@@ -25,64 +25,25 @@
                 </thead>
                 <tbody>
 
+                    @foreach ($data as $x => $data)
+                        <tr class="pt-4">
+                            <td>{{ $x + 1 }}</td>
+                            <td>{{ $data->name }}</td>
+                            <td>{{ $data->email }}</td>
+                            <td>{{ $data->phoneNo }}</td>
 
-                    <tr class="pt-4">
-                        <td>1</td>
-                        <td>Jones</td>
-                        <td>Jones@email.com</td>
-                        <td>1234654654</td>
+                            <td>
+                                <div class="flex gap-5">
 
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
+                                    <a class="cursor-pointer" href="#"><img width="38px"
+                                            src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    @endforeach
 
-
-
-                        <td>
-                            <div class="flex gap-5">
-
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="pt-4">
-                        <td>2</td>
-                        <td>Jones</td>
-                        <td>Jones@email.com</td>
-                        <td>1234654654</td>
-
-
-
-
-                        <td>
-                            <div class="flex gap-5">
-
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="pt-4">
-                        <td>3</td>
-                        <td>Jones</td>
-                        <td>Jones@email.com</td>
-                        <td>1234654654</td>
-
-
-
-
-                        <td>
-                            <div class="flex gap-5">
-
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/delete.svg') }}" alt="delete"></a>
-                                <a class="cursor-pointer" href="#"><img width="38px"
-                                        src="{{ asset('assets/icons/update.svg') }}" alt="update"></a>
-                            </div>
-                        </td>
-                    </tr>
 
 
                 </tbody>
@@ -132,6 +93,13 @@
                         <input type="email"
                             class="w-full border-[#DEE2E6] rounded-[4px] focus:border-black   h-[40px] text-[14px]"
                             name="email" id="email">
+                    </div>
+                    <div class="mt-8">
+
+                        <label class="text-[14px] font-normal" for="phone">Phone NO</label>
+                        <input type="email"
+                            class="w-full border-[#DEE2E6] rounded-[4px] focus:border-black   h-[40px] text-[14px]"
+                            name="phoneNo" id="phone">
                     </div>
                     <div class="mt-8">
 

@@ -314,20 +314,30 @@
                         </ul>
                     </div>
                 </div>
-                <div class="hidden md:block">
-                    <a href="/login">
-                        <button
-                            class="text-white bg-[#333333]  px-6 py-3 rounded-full  font-semibold  hover:bg-white  hover:text-black">Log
-                            In</button>
-                    </a>
-                </div>
-                <div class="hidden md:block">
-                    <a href="/signup">
-                        <button
-                            class="text-white bg-[#333333]  px-6 py-3 rounded-full  font-semibold hover:bg-white hover:text-black">sign
-                            Up</button>
-                    </a>
-                </div>
+
+                @if (!session('user_det'))
+                    <div class="hidden md:block">
+                        <a href="/login">
+                            <button
+                                class="text-white bg-[#333333]  px-6 py-3 rounded-full  font-semibold  hover:bg-white  hover:text-black">Log
+                                In</button>
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="/signup">
+                            <button
+                                class="text-white bg-[#333333]  px-6 py-3 rounded-full  font-semibold hover:bg-white hover:text-black">sign
+                                Up</button>
+                        </a>
+                    </div>
+                @else
+                    <div class="hidden md:block">
+                        <a href="/logout">
+                            <button
+                                class="text-white bg-[#333333]  px-6 py-3 rounded-full  font-semibold hover:bg-white hover:text-black">Logout</button>
+                        </a>
+                    </div>
+                @endif
                 <div class="ml-4">
                     <button data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
                         aria-controls="drawer-navigation">

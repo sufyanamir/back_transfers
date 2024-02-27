@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-<form action="registerdata" method="post">
+<form id="registerdata" method="post">
     @csrf
     <section class="grid lg:grid-cols-2 max-w-full px-20 mx-auto py-5 font-montserrat">
         <div class="flex flex-1 flex-col gap-5 p-4">
@@ -14,16 +14,18 @@
             </div>
             <div>
                 <x-input :name="'email'" :type="'email'" :label="'Email'"></x-input>
+                <p class="mt-1 text-red-600 font-semibold" id="emailEror"></p>
             </div>
             <div>
-                <x-input :name="'phone'" :type="'text'" :label="'Phone'"></x-input>
+                <x-input :name="'phoneNo'" :type="'number'" :label="'Phone'"></x-input>
             </div>
 
             <div>
                 <x-input :name="'password'" :type="'Password'" :label="'password'"></x-input>
             </div>
             <div>
-                <x-input :name="'password_confimation'" :type="'password'" :label="'Confirm Password'"></x-input>
+                <x-input :name="'password_confirmation'" :type="'password'" :label="'Confirm Password'"></x-input>
+                <p class="mt-1 text-red-600 font-semibold" id="passEror"></p>
             </div>
 
             <div>
@@ -49,7 +51,8 @@
             </div>
             <div>
                 <a href="/login">
-                    <button type="button" class="w-full  text-blue-700 capitalize h-[55px] rounded-lg">Already a member login</button>
+                    <button type="button" class="w-full  text-blue-700 capitalize h-[55px] rounded-lg">Already a member
+                        login</button>
                 </a>
                 <hr>
 
@@ -67,7 +70,37 @@
 
     </section>
 </form>
-
-
-
 @include('layouts.footer')
+
+<script>
+    $(document).ready(function() {
+        $("#registerdata").submit(function(event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: "post",
+                url: "/registerdata",
+                data: formData,
+                dataType: "json",
+                success: function(response) {
+                    console.log(response);
+                    if (response.success == true) {
+                        window.location.href = '/';
+                    } else if (response.success == false) {
+                        console.log(response);
+                    }
+                },
+                error: function(jqXHR) {
+                    let response = JSON.parse(jqXHR.responseText);
+                    if (response.message == "The password confirmation does not match.") {
+                        $('#passEror').html('password not Match')
+
+                    } else {
+                        $('#emailEror').html('Email Already Exist');
+
+                    }
+                }
+            });
+        });
+    });
+</script>

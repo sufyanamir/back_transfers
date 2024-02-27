@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('registerdata', [userController::class , 'register']);
+Route::post('registerdata', [userController::class, 'register']);
+Route::post('loginData', [userController::class, 'login']);
+Route::match(['get', 'post'], 'logout', [userController::class, 'logout']);
 
 Route::get('/', function () {
     return view('index');
@@ -59,7 +61,7 @@ Route::get('/serviceslist', function () {
 
 
 Route::get('/login', function () {
-    return view('signUp');
+    return view('login');
 });
 
 Route::get('/signup', function () {
@@ -92,30 +94,33 @@ Route::get('/invoice', function () {
     return view('dashboard.invoice');
 });
 
-Route::get('/admin', function () {
-    return view('admindashboard.dashboard');
+
+Route::get('/admin/login', function () {
+    return view('admindashboard.login');
+});
+Route::middleware(['customAuth'])->group(function () {
+
+
+    // admin Auth
+    Route::get('/admin', function () {
+        return view('admindashboard.dashboard');
+    });
+
+    Route::get('/admin/services', function () {
+        return view('admindashboard.adminServices');
+    });
+
+
+    Route::get('/admin/bookings', function () {
+        return view('admindashboard.allBookings');
+    });
+
+
+    Route::get('/admin/fleets', function () {
+        return view('admindashboard.adminFleets');
+    });
 });
 
-Route::get('/admin/services', function () {
-    return view('admindashboard.adminServices');
-});
-
-
-Route::get('/admin/bookings', function () {
-    return view('admindashboard.allBookings');
-});
-
-
-Route::get('/admin/fleets', function () {
-    return view('admindashboard.adminFleets');
-});
-
-Route::get('/admin/users', function () {
-    return view('admindashboard.users');
-});
-
-
-
-
-
-
+Route::get('/admin/users', [userController::class, 'getUserDate']);
+Route::post('/admin/Alogindata', [userController::class, 'adminlogin']);
+Route::match(['get', 'post'], 'Alogout', [userController::class, 'Alogout']);
