@@ -1,7 +1,7 @@
 @include('layouts.header')
 <section class="   relative  md:h-full">
-    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[60vh] md:h-[40vh]" src={{ asset('assets/images/header-image.png') }}
-        alt="background">
+    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[60vh] md:h-[60vh]"
+        src={{ asset('assets/images/header-image.png') }} alt="background">
     <div class="bg-black opacity-40  h-full w-full absolute top-0">
 
     </div>
@@ -125,16 +125,12 @@
                             </div>
                         </div>
                     </div>
-                    {{-- search bar --}}
-                    <div class="relative  flex  items-center">
-                        <a href="#" class="absolute  left-3  z-10">
+                    <div class="bg-black text-white rounded-[60px]">
+                        <button class="flex items-center  justify-center py-3 px-5 gap-2 ">
                             <img src="{{ asset('assets/icons/search.svg') }}" alt="search" class=" bg-black  ">
-                        </a>
-                        <input type="text" placeholder="Search"
-                            class="relative rounded-full outline-none px-10 w-[131px] bg-black text-white py-3  border-none">
+                            <p>Search</p>
+                        </button>
                     </div>
-
-
 
                 </div>
 
@@ -211,12 +207,11 @@
             </div>
         </div>
 
-        {{-- serach bar --}}
-        <div class="flex items-center gap-3   mx-2 rounded-md ">
-
-            <input type="text" placeholder="search"
-                class="w-full bg-black rounded-lg p-5 text-white outline-none">
-        </div>
+        {{-- serach --}}
+        <button class=" gap-3 flex items-center justify-center    mx-2 rounded-md  bg-black py-4 text-2xl text-white ">
+            <img src="{{ asset('assets/icons/search.svg') }}" alt="search" class=" bg-black  ">
+            Search
+        </button>
 
 
 
@@ -458,11 +453,11 @@
 </section>
 <section class="max-w-[1130px] mx-auto flex flex-wrap justify-center gap-10 py-20">
     <x-trip-card :img="'assets/icons/insurance.svg'" :title="'Safety First'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/dollar.svg'" :title="'Prices With No Surprises'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
     <x-trip-card :img="'assets/icons/travel.svg'" :title="'Private Travel Solutions'" :desc="'Both you and your shipments will travel with professional drivers. Always with the
-                                                                                                                                                                                                                        highest quality standards.'"></x-trip-card>
+                                                                                                                                                                                                                            highest quality standards.'"></x-trip-card>
 
 
 

@@ -28,7 +28,7 @@
             <div class="flex justify-between px-[20px] mb-3">
                 <h3 class="text-[20px] text-black">Services List</h3>
                 <button data-modal-target="addServicesmodal" data-modal-toggle="addServicesmodal"
-                    class="bg-black text-white h-12 px-5 rounded-[6px]  shadow-sm font-semibold ">Add Fleet</button>
+                    class="bg-black text-white h-12 px-5 rounded-[6px]  shadow-sm font-semibold ">Add Services</button>
             </div>
             <table id="datatable" class="overflow-scroll">
                 <thead class="py-6 text-black">
@@ -87,7 +87,7 @@
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700  ">
                 <div class="flex items-center  justify-center  p-5  rounded-t  bg-black">
                     <h3 class="text-xl font-semibold text-white text-center">
-                        Add Fleet
+                        Add Services
                     </h3>
                     <button type="button"
                         class="cursor-pointer absolute right-2 text-white bg-transparent rounded-lg text-sm w-8 h-8 ms-auto "

@@ -7,13 +7,16 @@
             <h1 class="text-2xl font-semibold">Sign in</h1>
             <p>Sign in with this account across the following sites.</p>
         </div>
-          
+
         <div>
 
         </div>
 
         <div>
-            <x-input :type="'Password'" :label="'password'"></x-input>
+            <x-input :type="'email'" :name="'email'" :label="'email'"></x-input>
+        </div>
+        <div>
+            <x-input :type="'Password'" :name="'password'" :label="'password'"></x-input>
         </div>
         <div class="flex justify-between">
             <div class="flex items-center gap-2">

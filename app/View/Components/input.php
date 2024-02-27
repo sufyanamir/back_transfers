@@ -15,11 +15,13 @@ class input extends Component
      public $label;
 
     public $type;
-    public function __construct($label,$type)
+    public $name;
+    public function __construct($label,$type,$name)
     {
         $this->label = $label;
 
         $this->type = $type;
+        $this->name = $name;
     }
 
     /**

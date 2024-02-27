@@ -1,10 +1,10 @@
 @include('layouts.header')
 <section class="   relative  md:h-full">
-    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[40vh]" src={{ asset('assets/images/header-image.png') }}
-        alt="background">
-    <div class="bg-black opacity-30  h-full w-full absolute top-0">
+    <img class=" z-10 w-full object-cover lg:h-[80vh]  h-[60vh] md:h-[60vh]"
+    src={{ asset('assets/images/header-image.png') }} alt="background">
+<div class="bg-black opacity-40  h-full w-full absolute top-0">
 
-    </div>
+</div>
     <div class=" h-full w-full object-contain z-20 px-6 ">
         <div class="">
             <div
@@ -124,14 +124,13 @@
                             </div>
                         </div>
                     </div>
-                    {{-- search bar --}}
-                    <div class="relative  flex  items-center">
-                        <a href="#" class="absolute  left-3  z-10">
+                    <div class="bg-black text-white rounded-[60px]">
+                        <button class="flex items-center  justify-center py-3 px-5 gap-2 ">
                             <img src="{{ asset('assets/icons/search.svg') }}" alt="search" class=" bg-black  ">
-                        </a>
-                        <input type="text" placeholder="Search"
-                            class="relative rounded-full outline-none px-10 w-[131px] bg-black text-white py-3  border-none">
+                            <p>Search</p>
+                        </button>
                     </div>
+
 
 
 
